@@ -6,3 +6,5 @@ pandas
 pyarrow
 python-dotenv
 functions-framework
+requests
+openpyxl
