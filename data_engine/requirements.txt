@@ -8,3 +8,4 @@ python-dotenv
 functions-framework
 requests
 openpyxl
+pytrends
