@@ -196,6 +196,85 @@ class ZillowPreprocessor:
             logger.info(f"    Max: ${metric_data.max():,.2f}")
         
         return combined_df
+    
+    def create_city_latest_table(self, df_long: pd.DataFrame) -> pd.DataFrame:
+        """
+        Create table with latest metric values for each city
+        
+        Args:
+            df_long: Long-format DataFrame with all metrics
+            
+        Returns:
+            Wide-format DataFrame with latest values for each city-metric
+        """
+        logger.info("Creating city latest table...")
+        
+        # Sort by date and get latest for each city-metric combination
+        df_sorted = df_long.sort_values('date')
+        df_latest = df_sorted.groupby(
+            ['region_name', 'state_name', 'metric_type', 'region_type']
+        ).last().reset_index()
+        
+        logger.info(f"  Found {len(df_latest)} city-metric combinations")
+        
+        # Pivot to wide format (one row per city, columns for each metric)
+        df_pivot = df_latest.pivot_table(
+            index=['region_name', 'state_name', 'region_type'],
+            columns='metric_type',
+            values='value',
+            aggfunc='first'
+        ).reset_index()
+        
+        # Add latest_date column (max date across all metrics for each city)
+        latest_dates = df_latest.groupby(['region_name', 'state_name'])['date'].max().reset_index()
+        df_pivot = df_pivot.merge(latest_dates, on=['region_name', 'state_name'])
+        
+        logger.info(f"  Created table with {len(df_pivot)} cities and {len(df_pivot.columns)} columns")
+        
+        return df_pivot
+    
+    def create_state_aggregated_table(self, df_city_latest: pd.DataFrame) -> pd.DataFrame:
+        """
+        Create pre-aggregated state-level metrics
+        
+        Args:
+            df_city_latest: Wide-format DataFrame with city-level data
+            
+        Returns:
+            DataFrame with aggregated state-level metrics
+        """
+        logger.info("Creating state aggregated table...")
+        
+        # Filter to MSA (city-level) only
+        df_msa = df_city_latest[df_city_latest['region_type'] == 'msa'].copy()
+        
+        # Define which metrics to sum vs average
+        sum_metrics = [
+            'active_listings', 'new_listings', 'sales_count', 
+            'new_construction_sales_count'
+        ]
+        
+        # Build aggregation dictionary
+        agg_dict = {}
+        for col in df_msa.columns:
+            if col == 'state_name':
+                continue  # Grouping column
+            elif col == 'region_name':
+                agg_dict[col] = 'count'  # Will become city_count
+            elif col == 'latest_date':
+                agg_dict[col] = 'max'
+            elif col in sum_metrics:
+                agg_dict[col] = 'sum'
+            elif col not in ['region_type', 'date']:
+                agg_dict[col] = 'mean'
+        
+        # Perform aggregation
+        df_state = df_msa.groupby('state_name').agg(agg_dict).reset_index()
+        df_state.rename(columns={'region_name': 'city_count'}, inplace=True)
+        
+        logger.info(f"  Created table with {len(df_state)} states and {len(df_state.columns)} columns")
+        
+        return df_state
 
 
 def main():
@@ -210,11 +289,33 @@ def main():
         processed_dir=str(processed_dir)
     )
     
-    # Process all files
-    df = preprocessor.process_all(save_format='parquet')
+    # Process all files to get long-format data
+    df_long = preprocessor.process_all(save_format='parquet')
     
-    logger.info("\n✅ Preprocessing complete!")
-    logger.info(f"Output saved to: {processed_dir / 'zillow_combined.parquet'}")
+    logger.info("\n" + "="*60)
+    logger.info("Creating pre-computed aggregation tables...")
+    logger.info("="*60)
+    
+    # Create city latest table (wide format with latest values)
+    df_city_latest = preprocessor.create_city_latest_table(df_long)
+    city_output_path = processed_dir / 'zillow_city_latest.parquet'
+    df_city_latest.to_parquet(city_output_path, index=False)
+    logger.info(f"✅ Saved city latest table to: {city_output_path}")
+    
+    # Create state aggregated table
+    df_state_agg = preprocessor.create_state_aggregated_table(df_city_latest)
+    state_output_path = processed_dir / 'zillow_state_aggregated.parquet'
+    df_state_agg.to_parquet(state_output_path, index=False)
+    logger.info(f"✅ Saved state aggregated table to: {state_output_path}")
+    
+    logger.info("\n" + "="*60)
+    logger.info("✅ All preprocessing complete!")
+    logger.info("="*60)
+    logger.info(f"Long-format data: {processed_dir / 'zillow_combined.parquet'}")
+    logger.info(f"City latest data: {city_output_path}")
+    logger.info(f"State aggregated data: {state_output_path}")
+
+
 
 
 if __name__ == '__main__':

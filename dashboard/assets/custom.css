@@ -1,0 +1,62 @@
+/* Dash Dropdown (React-Select) Dark Mode Overrides */
+
+/* The main control box */
+.Select-control {
+    background-color: #000000 !important;
+    border: 1px solid #333 !important;
+    color: #ffffff !important;
+}
+
+/* The text value inside the box */
+.Select-value-label {
+    color: #ffffff !important;
+}
+
+/* The input proper */
+.Select-input > input {
+    color: #ffffff !important;
+}
+
+/* Placeholder text */
+.Select-placeholder {
+    color: #888888 !important;
+}
+
+/* The arrow/caret */
+.Select-arrow {
+    border-color: #999 transparent transparent !important;
+}
+
+/* The dropdown menu container */
+.Select-menu-outer {
+    background-color: #000000 !important;
+    border: 1px solid #333 !important;
+    margin-top: 5px !important;
+}
+
+/* Individual options */
+.Select-option {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    padding: 8px 10px !important;
+}
+
+/* Focused option (hover default) */
+.Select-option.is-focused {
+    background-color: #1a1a1a !important; 
+    color: #ffffff !important;
+}
+
+/* Selected option */
+.Select-option.is-selected {
+    background-color: #2a2a2a !important;
+    color: #A7D129 !important; /* Neon green accent */
+}
+
+/* Clear 'x' button */
+.Select-clear {
+    color: #999 !important;
+}
+.Select-clear:hover {
+    color: #ff3333 !important;
+}
