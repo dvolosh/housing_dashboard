@@ -32,27 +32,43 @@ logger = logging.getLogger(__name__)
 class TrendsFetcher:
     """Handles fetching Google Trends data"""
     
-    # Housing-related search terms to track
+    # Housing market topics using validated Google Trends MIDs and search terms
+    # Mix of topics (MIDs) and search terms based on availability/validation
     SEARCH_TERMS = {
-        'mortgage_rate': {
-            'term': 'mortgage rate',
-            'description': 'Interest in mortgage rates - indicates buyer financing concerns'
+        # Involuntary Supply - Homes coming to market from life events
+        'estate_sale': {
+            'term': '/m/02rmp0',  # Topic: Estate Sale (VALIDATED)
+            'display_name': 'Estate Sales',
+            'category': 'Involuntary Supply',
+            'description': 'Estate liquidation - indicates housing supply from inheritance/death',
+            'is_topic': True
         },
-        'foreclosure': {
-            'term': 'foreclosure',
-            'description': 'Interest in foreclosures - indicates market distress'
+        
+        # Distress Signal - Market stress indicators
+        'foreclosure_auction': {
+            'term': '/m/02tp2m',  # Topic: Foreclosure Auction (VALIDATED)
+            'display_name': 'Foreclosure Auctions',
+            'category': 'Distress Signal',
+            'description': 'Foreclosure activity - indicates forced selling/market distress',
+            'is_topic': True
         },
-        'house_hunting': {
-            'term': 'house hunting',
-            'description': 'Interest in house hunting - indicates active buyer behavior'
+        
+        # Financial Friction - Homeownership cost pressures
+        'home_insurance': {
+            'term': 'home insurance',  # Search term (MID /m/01v8_f not found)
+            'display_name': 'Home Insurance',
+            'category': 'Financial Friction',
+            'description': 'Insurance concerns - indicates rising carry costs/affordability stress',
+            'is_topic': False
         },
-        'first_time_home_buyer': {
-            'term': 'first time home buyer',
-            'description': 'Interest in first-time buying - indicates new market entrants'
-        },
-        'housing_market_crash': {
-            'term': 'housing market crash',
-            'description': 'Interest in market crash - indicates fear/uncertainty'
+        
+        # Market Access - Alternative financing pathways
+        'mortgage_assumption': {
+            'term': '/m/0ddkfg',  # Topic: Mortgage Assumption (trying MID, can fallback to 'mortgage payments')
+            'display_name': 'Mortgage Assumption',
+            'category': 'Market Access',
+            'description': 'Assumable mortgage interest - indicates buyers seeking rate relief',
+            'is_topic': True
         }
     }
     
@@ -146,10 +162,14 @@ class TrendsFetcher:
         # Save metadata
         metadata_file = self.raw_dir / f"{term_key}_metadata.json"
         
+        term_info = self.SEARCH_TERMS[term_key]
         metadata_to_save = {
             'term_key': term_key,
-            'search_term': self.SEARCH_TERMS[term_key]['term'],
-            'description': self.SEARCH_TERMS[term_key]['description'],
+            'term': term_info['term'],  # MID or search string
+            'display_name': term_info.get('display_name', term_info['term']),
+            'category': term_info['category'],
+            'is_topic': term_info.get('is_topic', False),
+            'description': term_info['description'],
             'geo': self.geo,
             'last_date': data['date'].max().strftime('%Y-%m-%d'),
             'total_records': len(data),
@@ -180,8 +200,13 @@ class TrendsFetcher:
             incremental: If True, fetch only new data since last update
             retry_count: Current retry attempt
         """
+        term_info = self.SEARCH_TERMS[term_key]
+        display_name = term_info.get('display_name', term_info['term'])
+        is_topic = term_info.get('is_topic', False)
+        term_type = "Topic" if is_topic else "Search Term"
+        
         logger.info(f"\n{'='*60}")
-        logger.info(f"Fetching: {self.SEARCH_TERMS[term_key]['term']}")
+        logger.info(f"Fetching: {display_name} ({term_type})")
         logger.info(f"{'='*60}")
         
         # Determine time range

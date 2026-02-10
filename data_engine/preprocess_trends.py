@@ -23,12 +23,19 @@ class TrendsPreprocessor:
     
     # Term keys (must match fetch_trends.py)
     TERM_KEYS = [
-        'mortgage_rate',
-        'foreclosure',
-        'house_hunting',
-        'first_time_home_buyer',
-        'housing_market_crash'
+        'estate_sale',
+        'foreclosure_auction',
+        'home_insurance',
+        'mortgage_assumption'
     ]
+    
+    # Category mapping
+    CATEGORY_MAP = {
+        'estate_sale': 'Involuntary Supply',
+        'foreclosure_auction': 'Distress Signal',
+        'home_insurance': 'Financial Friction',
+        'mortgage_assumption': 'Market Access'
+    }
     
     def __init__(self, raw_dir: str, processed_dir: str):
         """
@@ -69,7 +76,8 @@ class TrendsPreprocessor:
         with open(metadata_file, 'r', encoding='utf-8') as f:
             metadata = json.load(f)
         
-        search_term = metadata['search_term']
+        # Use display_name if available, fallback to term
+        search_term = metadata.get('display_name', metadata.get('search_term', metadata['term']))
         geo = metadata['geo']
         
         logger.info(f"  Loaded {len(df)} records")
@@ -80,9 +88,10 @@ class TrendsPreprocessor:
         # Add metadata columns
         df['search_term'] = search_term
         df['region'] = geo
+        df['category'] = self.CATEGORY_MAP.get(term_key, 'Unknown')
         
         # Select and order columns
-        df = df[['date', 'search_term', 'interest_score', 'region']]
+        df = df[['date', 'search_term', 'category', 'interest_score', 'region']]
         
         # Sort by date
         df = df.sort_values('date')
@@ -120,8 +129,49 @@ class TrendsPreprocessor:
         # Combine all terms
         combined_df = pd.concat(all_dfs, ignore_index=True)
         
+        logger.info(f"\nDaily data collected: {len(combined_df)} records")
+        
+        # Aggregate to weekly level to reduce noise
+        logger.info("Aggregating to weekly level...")
+        
+        # Group by week and search_term, calculate average interest score
+        weekly_dfs = []
+        for term in combined_df['search_term'].unique():
+            term_df = combined_df[combined_df['search_term'] == term].copy()
+            
+            # Set date as index for resampling
+            term_df = term_df.set_index('date')
+            
+            # Resample to weekly (Sunday start), taking mean of interest_score
+            # label='left' makes week_start_date the actual Sunday the week starts, not the end boundary
+            weekly = term_df.resample('W-SUN', label='left').agg({
+                'interest_score': 'mean',
+                'category': 'first',  # Category is constant per term
+                'region': 'first'     # Region is constant
+            }).reset_index()
+            
+            # Rename columns for clarity
+            weekly = weekly.rename(columns={
+                'date': 'week_start_date',
+                'interest_score': 'avg_interest_score'
+            })
+            
+            # Round average to integer
+            weekly['avg_interest_score'] = weekly['avg_interest_score'].round().astype(int)
+            
+            # Add search term back
+            weekly['search_term'] = term
+            
+            weekly_dfs.append(weekly)
+        
+        # Combine all weekly data
+        combined_df = pd.concat(weekly_dfs, ignore_index=True)
+        
         # Sort by date and term
-        combined_df = combined_df.sort_values(['date', 'search_term'])
+        combined_df = combined_df.sort_values(['week_start_date', 'search_term'])
+        
+        # Reorder columns
+        combined_df = combined_df[['week_start_date', 'search_term', 'category', 'avg_interest_score', 'region']]
         
         # Save to CSV
         output_file = self.processed_dir / 'trends_data.csv'
@@ -129,9 +179,10 @@ class TrendsPreprocessor:
         
         logger.info(f"\n{'='*60}")
         logger.info("✅ Preprocessing complete!")
-        logger.info(f"Total records: {len(combined_df)}")
+        logger.info(f"Total weekly records: {len(combined_df)}")
         logger.info(f"Terms: {combined_df['search_term'].nunique()}")
-        logger.info(f"Date range: {combined_df['date'].min()} to {combined_df['date'].max()}")
+        logger.info(f"Categories: {', '.join(combined_df['category'].unique())}")
+        logger.info(f"Week range: {combined_df['week_start_date'].min()} to {combined_df['week_start_date'].max()}")
         logger.info(f"Output: {output_file}")
         
         return combined_df

@@ -1,8 +1,8 @@
 """
 Google Trends Data BigQuery Uploader
 
-Uploads processed Google Trends data to BigQuery.
-Handles deduplication on (date, search_term, region).
+Uploads processed Google Trends weekly data to BigQuery.
+Handles deduplication on (week_start_date, search_term, region).
 """
 
 import pandas as pd
@@ -57,9 +57,10 @@ class TrendsBigQueryUploader:
         logger.info(f"Creating table {self.table_ref}...")
         
         schema = [
-            bigquery.SchemaField("date", "DATE", mode="REQUIRED", description="Date of measurement"),
+            bigquery.SchemaField("week_start_date", "DATE", mode="REQUIRED", description="Start date of the week (Sunday)"),
             bigquery.SchemaField("search_term", "STRING", mode="REQUIRED", description="Search term"),
-            bigquery.SchemaField("interest_score", "INTEGER", mode="REQUIRED", description="Interest score (0-100)"),
+            bigquery.SchemaField("category", "STRING", mode="REQUIRED", description="Term category: Distress, Affordability, or Inventory"),
+            bigquery.SchemaField("avg_interest_score", "INTEGER", mode="REQUIRED", description="Weekly average interest score (0-100)"),
             bigquery.SchemaField("region", "STRING", mode="REQUIRED", description="Geographic region"),
             bigquery.SchemaField("updated_at", "TIMESTAMP", mode="NULLABLE", description="When record was inserted"),
         ]
@@ -69,26 +70,26 @@ class TrendsBigQueryUploader:
         # Configure partitioning
         table.time_partitioning = bigquery.TimePartitioning(
             type_=bigquery.TimePartitioningType.DAY,
-            field="date"
+            field="week_start_date"
         )
         
         # Configure clustering
-        table.clustering_fields = ["search_term"]
+        table.clustering_fields = ["category", "search_term"]
         
         # Set description
-        table.description = "Google Trends interest scores for housing-related search terms"
+        table.description = "Google Trends weekly average interest scores for housing-related search terms"
         
         # Create table
         table = self.client.create_table(table)
         logger.info(f"✅ Created table {self.table_ref}")
     
     def get_existing_records(self) -> set:
-        """Get set of existing (date, search_term, region) tuples to avoid duplicates"""
+        """Get set of existing (week_start_date, search_term, region) tuples to avoid duplicates"""
         if not self.table_exists():
             return set()
         
         query = f"""
-        SELECT DISTINCT date, search_term, region
+        SELECT DISTINCT week_start_date, search_term, region
         FROM `{self.table_ref}`
         """
         
@@ -96,7 +97,7 @@ class TrendsBigQueryUploader:
         
         try:
             result = self.client.query(query).result()
-            records = {(row.date, row.search_term, row.region) for row in result}
+            records = {(row.week_start_date, row.search_term, row.region) for row in result}
             logger.info(f"Found {len(records)} existing records")
             return records
         except Exception as e:
@@ -122,7 +123,7 @@ class TrendsBigQueryUploader:
             return
         
         logger.info(f"Loading data from {csv_file}...")
-        df = pd.read_csv(csv_file, parse_dates=['date'])
+        df = pd.read_csv(csv_file, parse_dates=['week_start_date'])
         logger.info(f"Loaded {len(df)} records")
         
         # Create table if it doesn't exist
@@ -137,7 +138,7 @@ class TrendsBigQueryUploader:
                 original_count = len(df)
                 
                 # Create tuple for comparison
-                df['_key'] = list(zip(df['date'].dt.date, df['search_term'], df['region']))
+                df['_key'] = list(zip(df['week_start_date'].dt.date, df['search_term'], df['region']))
                 df = df[~df['_key'].isin(existing_records)]
                 df = df.drop(columns=['_key'])
                 
@@ -152,7 +153,7 @@ class TrendsBigQueryUploader:
         df['updated_at'] = pd.Timestamp.now()
         
         # Ensure proper data types
-        df['interest_score'] = df['interest_score'].astype('Int64')
+        df['avg_interest_score'] = df['avg_interest_score'].astype('Int64')
         
         # Configure load job
         job_config = bigquery.LoadJobConfig(
@@ -192,49 +193,55 @@ class TrendsBigQueryUploader:
         logger.info("Verifying upload...")
         logger.info(f"{'='*60}")
         
-        # Query 1: Total records by search term
+        # Query 1: Total records by category and search term
         query1 = f"""
         SELECT 
+            category,
             search_term,
             COUNT(*) as record_count,
-            MIN(date) as earliest_date,
-            MAX(date) as latest_date,
-            AVG(interest_score) as avg_interest
+            MIN(week_start_date) as earliest_week,
+            MAX(week_start_date) as latest_week,
+            AVG(avg_interest_score) as avg_interest
         FROM `{self.table_ref}`
-        GROUP BY search_term
-        ORDER BY search_term
+        GROUP BY category, search_term
+        ORDER BY category, search_term
         """
         
-        logger.info("\n📊 Records by search term:")
+        logger.info("\n📊 Records by category and search term:")
         result = self.client.query(query1).result()
+        current_category = None
         for row in result:
-            logger.info(f"  {row.search_term}:")
-            logger.info(f"    Records: {row.record_count:,}")
-            logger.info(f"    Date range: {row.earliest_date} to {row.latest_date}")
-            logger.info(f"    Avg interest: {row.avg_interest:.1f}")
+            if row.category != current_category:
+                logger.info(f"\n  [{row.category}]")
+                current_category = row.category
+            logger.info(f"    {row.search_term}:")
+            logger.info(f"      Records: {row.record_count:,}")
+            logger.info(f"      Week range: {row.earliest_week} to {row.latest_week}")
+            logger.info(f"      Avg interest: {row.avg_interest:.1f}")
         
-        # Query 2: Recent high-interest periods
+        # Query 2: Recent high-interest weeks
         query2 = f"""
         SELECT 
-            date,
+            week_start_date,
+            category,
             search_term,
-            interest_score
+            avg_interest_score
         FROM `{self.table_ref}`
-        WHERE date >= DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)
-          AND interest_score >= 75
-        ORDER BY date DESC, interest_score DESC
+        WHERE week_start_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 12 WEEK)
+          AND avg_interest_score >= 75
+        ORDER BY week_start_date DESC, avg_interest_score DESC
         LIMIT 10
         """
         
-        logger.info("\n📊 Recent high-interest periods (score >= 75):")
+        logger.info("\n📊 Recent high-interest weeks (score >= 75):")
         result = self.client.query(query2).result()
         count = 0
         for row in result:
-            logger.info(f"  {row.date}: {row.search_term} = {row.interest_score}")
+            logger.info(f"  {row.week_start_date}: [{row.category}] {row.search_term} = {row.avg_interest_score}")
             count += 1
         
         if count == 0:
-            logger.info("  No high-interest periods in last 30 days")
+            logger.info("  No high-interest weeks in last 12 weeks")
         
         logger.info("\n✅ Verification complete!")
 
@@ -251,8 +258,8 @@ def main():
     
     # Load configuration from environment
     project_id = os.getenv('GCP_PROJECT_ID')
-    dataset_id = os.getenv('BQ_DATASET_ID', 'housing_dashboard')
-    table_id = 'trends_metrics'
+    dataset_id = os.getenv('GCP_DATASET_ID', 'db')
+    table_id = 'google_search_trends'
     
     if not project_id:
         logger.error("GCP_PROJECT_ID not found in environment variables")

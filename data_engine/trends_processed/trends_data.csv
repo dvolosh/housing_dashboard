@@ -1,1306 +1,1053 @@
-date,search_term,interest_score,region
-2021-02-07,first time home buyer,67,US
-2021-02-07,foreclosure,75,US
-2021-02-07,house hunting,44,US
-2021-02-07,housing market crash,12,US
-2021-02-07,mortgage rate,28,US
-2021-02-14,first time home buyer,68,US
-2021-02-14,foreclosure,79,US
-2021-02-14,house hunting,40,US
-2021-02-14,housing market crash,13,US
-2021-02-14,mortgage rate,27,US
-2021-02-21,first time home buyer,68,US
-2021-02-21,foreclosure,79,US
-2021-02-21,house hunting,43,US
-2021-02-21,housing market crash,18,US
-2021-02-21,mortgage rate,34,US
-2021-02-28,first time home buyer,75,US
-2021-02-28,foreclosure,81,US
-2021-02-28,house hunting,42,US
-2021-02-28,housing market crash,17,US
-2021-02-28,mortgage rate,33,US
-2021-03-07,first time home buyer,73,US
-2021-03-07,foreclosure,84,US
-2021-03-07,house hunting,38,US
-2021-03-07,housing market crash,17,US
-2021-03-07,mortgage rate,31,US
-2021-03-14,first time home buyer,74,US
-2021-03-14,foreclosure,79,US
-2021-03-14,house hunting,38,US
-2021-03-14,housing market crash,17,US
-2021-03-14,mortgage rate,30,US
-2021-03-21,first time home buyer,72,US
-2021-03-21,foreclosure,77,US
-2021-03-21,house hunting,40,US
-2021-03-21,housing market crash,17,US
-2021-03-21,mortgage rate,27,US
-2021-03-28,first time home buyer,64,US
-2021-03-28,foreclosure,77,US
-2021-03-28,house hunting,40,US
-2021-03-28,housing market crash,20,US
-2021-03-28,mortgage rate,27,US
-2021-04-04,first time home buyer,66,US
-2021-04-04,foreclosure,82,US
-2021-04-04,house hunting,46,US
-2021-04-04,housing market crash,21,US
-2021-04-04,mortgage rate,27,US
-2021-04-11,first time home buyer,66,US
-2021-04-11,foreclosure,75,US
-2021-04-11,house hunting,46,US
-2021-04-11,housing market crash,27,US
-2021-04-11,mortgage rate,28,US
-2021-04-18,first time home buyer,91,US
-2021-04-18,foreclosure,73,US
-2021-04-18,house hunting,45,US
-2021-04-18,housing market crash,27,US
-2021-04-18,mortgage rate,27,US
-2021-04-25,first time home buyer,100,US
-2021-04-25,foreclosure,77,US
-2021-04-25,house hunting,46,US
-2021-04-25,housing market crash,24,US
-2021-04-25,mortgage rate,25,US
-2021-05-02,first time home buyer,76,US
-2021-05-02,foreclosure,78,US
-2021-05-02,house hunting,47,US
-2021-05-02,housing market crash,25,US
-2021-05-02,mortgage rate,24,US
-2021-05-09,first time home buyer,73,US
-2021-05-09,foreclosure,74,US
-2021-05-09,house hunting,40,US
-2021-05-09,housing market crash,27,US
-2021-05-09,mortgage rate,26,US
-2021-05-16,first time home buyer,66,US
-2021-05-16,foreclosure,74,US
-2021-05-16,house hunting,43,US
-2021-05-16,housing market crash,26,US
-2021-05-16,mortgage rate,26,US
-2021-05-23,first time home buyer,60,US
-2021-05-23,foreclosure,71,US
-2021-05-23,house hunting,41,US
-2021-05-23,housing market crash,27,US
-2021-05-23,mortgage rate,25,US
-2021-05-30,first time home buyer,61,US
-2021-05-30,foreclosure,75,US
-2021-05-30,house hunting,39,US
-2021-05-30,housing market crash,24,US
-2021-05-30,mortgage rate,21,US
-2021-06-06,first time home buyer,57,US
-2021-06-06,foreclosure,71,US
-2021-06-06,house hunting,50,US
-2021-06-06,housing market crash,23,US
-2021-06-06,mortgage rate,21,US
-2021-06-13,first time home buyer,59,US
-2021-06-13,foreclosure,72,US
-2021-06-13,house hunting,44,US
-2021-06-13,housing market crash,27,US
-2021-06-13,mortgage rate,24,US
-2021-06-20,first time home buyer,54,US
-2021-06-20,foreclosure,74,US
-2021-06-20,house hunting,44,US
-2021-06-20,housing market crash,27,US
-2021-06-20,mortgage rate,24,US
-2021-06-27,first time home buyer,53,US
-2021-06-27,foreclosure,76,US
-2021-06-27,house hunting,41,US
-2021-06-27,housing market crash,27,US
-2021-06-27,mortgage rate,23,US
-2021-07-04,first time home buyer,59,US
-2021-07-04,foreclosure,97,US
-2021-07-04,house hunting,49,US
-2021-07-04,housing market crash,29,US
-2021-07-04,mortgage rate,21,US
-2021-07-11,first time home buyer,62,US
-2021-07-11,foreclosure,71,US
-2021-07-11,house hunting,57,US
-2021-07-11,housing market crash,30,US
-2021-07-11,mortgage rate,24,US
-2021-07-18,first time home buyer,56,US
-2021-07-18,foreclosure,69,US
-2021-07-18,house hunting,50,US
-2021-07-18,housing market crash,26,US
-2021-07-18,mortgage rate,23,US
-2021-07-25,first time home buyer,54,US
-2021-07-25,foreclosure,78,US
-2021-07-25,house hunting,47,US
-2021-07-25,housing market crash,29,US
-2021-07-25,mortgage rate,26,US
-2021-08-01,first time home buyer,51,US
-2021-08-01,foreclosure,79,US
-2021-08-01,house hunting,47,US
-2021-08-01,housing market crash,23,US
-2021-08-01,mortgage rate,23,US
-2021-08-08,first time home buyer,51,US
-2021-08-08,foreclosure,70,US
-2021-08-08,house hunting,48,US
-2021-08-08,housing market crash,20,US
-2021-08-08,mortgage rate,22,US
-2021-08-15,first time home buyer,51,US
-2021-08-15,foreclosure,68,US
-2021-08-15,house hunting,50,US
-2021-08-15,housing market crash,20,US
-2021-08-15,mortgage rate,21,US
-2021-08-22,first time home buyer,53,US
-2021-08-22,foreclosure,70,US
-2021-08-22,house hunting,43,US
-2021-08-22,housing market crash,23,US
-2021-08-22,mortgage rate,21,US
-2021-08-29,first time home buyer,47,US
-2021-08-29,foreclosure,71,US
-2021-08-29,house hunting,45,US
-2021-08-29,housing market crash,18,US
-2021-08-29,mortgage rate,20,US
-2021-09-05,first time home buyer,47,US
-2021-09-05,foreclosure,67,US
-2021-09-05,house hunting,49,US
-2021-09-05,housing market crash,19,US
-2021-09-05,mortgage rate,19,US
-2021-09-12,first time home buyer,46,US
-2021-09-12,foreclosure,72,US
-2021-09-12,house hunting,50,US
-2021-09-12,housing market crash,21,US
-2021-09-12,mortgage rate,21,US
-2021-09-19,first time home buyer,47,US
-2021-09-19,foreclosure,70,US
-2021-09-19,house hunting,53,US
-2021-09-19,housing market crash,24,US
-2021-09-19,mortgage rate,22,US
-2021-09-26,first time home buyer,47,US
-2021-09-26,foreclosure,69,US
-2021-09-26,house hunting,52,US
-2021-09-26,housing market crash,20,US
-2021-09-26,mortgage rate,22,US
-2021-10-03,first time home buyer,46,US
-2021-10-03,foreclosure,71,US
-2021-10-03,house hunting,57,US
-2021-10-03,housing market crash,20,US
-2021-10-03,mortgage rate,23,US
-2021-10-10,first time home buyer,43,US
-2021-10-10,foreclosure,70,US
-2021-10-10,house hunting,61,US
-2021-10-10,housing market crash,18,US
-2021-10-10,mortgage rate,22,US
-2021-10-17,first time home buyer,42,US
-2021-10-17,foreclosure,63,US
-2021-10-17,house hunting,68,US
-2021-10-17,housing market crash,21,US
-2021-10-17,mortgage rate,22,US
-2021-10-24,first time home buyer,40,US
-2021-10-24,foreclosure,65,US
-2021-10-24,house hunting,81,US
-2021-10-24,housing market crash,19,US
-2021-10-24,mortgage rate,22,US
-2021-10-31,first time home buyer,45,US
-2021-10-31,foreclosure,66,US
-2021-10-31,house hunting,68,US
-2021-10-31,housing market crash,22,US
-2021-10-31,mortgage rate,22,US
-2021-11-07,first time home buyer,41,US
-2021-11-07,foreclosure,64,US
-2021-11-07,house hunting,59,US
-2021-11-07,housing market crash,20,US
-2021-11-07,mortgage rate,21,US
-2021-11-14,first time home buyer,40,US
-2021-11-14,foreclosure,64,US
-2021-11-14,house hunting,55,US
-2021-11-14,housing market crash,19,US
-2021-11-14,mortgage rate,20,US
-2021-11-21,first time home buyer,36,US
-2021-11-21,foreclosure,58,US
-2021-11-21,house hunting,50,US
-2021-11-21,housing market crash,16,US
-2021-11-21,mortgage rate,16,US
-2021-11-28,first time home buyer,41,US
-2021-11-28,foreclosure,77,US
-2021-11-28,house hunting,57,US
-2021-11-28,housing market crash,16,US
-2021-11-28,mortgage rate,21,US
-2021-12-05,first time home buyer,40,US
-2021-12-05,foreclosure,62,US
-2021-12-05,house hunting,46,US
-2021-12-05,housing market crash,17,US
-2021-12-05,mortgage rate,19,US
-2021-12-12,first time home buyer,37,US
-2021-12-12,foreclosure,66,US
-2021-12-12,house hunting,38,US
-2021-12-12,housing market crash,16,US
-2021-12-12,mortgage rate,19,US
-2021-12-19,first time home buyer,33,US
-2021-12-19,foreclosure,55,US
-2021-12-19,house hunting,35,US
-2021-12-19,housing market crash,13,US
-2021-12-19,mortgage rate,15,US
-2021-12-26,first time home buyer,50,US
-2021-12-26,foreclosure,65,US
-2021-12-26,house hunting,39,US
-2021-12-26,housing market crash,17,US
-2021-12-26,mortgage rate,16,US
-2022-01-02,first time home buyer,60,US
-2022-01-02,foreclosure,72,US
-2022-01-02,house hunting,49,US
-2022-01-02,housing market crash,21,US
-2022-01-02,mortgage rate,26,US
-2022-01-09,first time home buyer,59,US
-2022-01-09,foreclosure,75,US
-2022-01-09,house hunting,57,US
-2022-01-09,housing market crash,21,US
-2022-01-09,mortgage rate,30,US
-2022-01-16,first time home buyer,56,US
-2022-01-16,foreclosure,73,US
-2022-01-16,house hunting,51,US
-2022-01-16,housing market crash,23,US
-2022-01-16,mortgage rate,28,US
-2022-01-23,first time home buyer,61,US
-2022-01-23,foreclosure,92,US
-2022-01-23,house hunting,47,US
-2022-01-23,housing market crash,28,US
-2022-01-23,mortgage rate,33,US
-2022-01-30,first time home buyer,62,US
-2022-01-30,foreclosure,76,US
-2022-01-30,house hunting,46,US
-2022-01-30,housing market crash,23,US
-2022-01-30,mortgage rate,28,US
-2022-02-06,first time home buyer,64,US
-2022-02-06,foreclosure,85,US
-2022-02-06,house hunting,45,US
-2022-02-06,housing market crash,29,US
-2022-02-06,mortgage rate,32,US
-2022-02-13,first time home buyer,57,US
-2022-02-13,foreclosure,85,US
-2022-02-13,house hunting,39,US
-2022-02-13,housing market crash,28,US
-2022-02-13,mortgage rate,34,US
-2022-02-20,first time home buyer,61,US
-2022-02-20,foreclosure,85,US
-2022-02-20,house hunting,42,US
-2022-02-20,housing market crash,56,US
-2022-02-20,mortgage rate,31,US
-2022-02-27,first time home buyer,57,US
-2022-02-27,foreclosure,75,US
-2022-02-27,house hunting,40,US
-2022-02-27,housing market crash,29,US
-2022-02-27,mortgage rate,32,US
-2022-03-06,first time home buyer,55,US
-2022-03-06,foreclosure,79,US
-2022-03-06,house hunting,40,US
-2022-03-06,housing market crash,36,US
-2022-03-06,mortgage rate,30,US
-2022-03-13,first time home buyer,60,US
-2022-03-13,foreclosure,79,US
-2022-03-13,house hunting,42,US
-2022-03-13,housing market crash,34,US
-2022-03-13,mortgage rate,40,US
-2022-03-20,first time home buyer,59,US
-2022-03-20,foreclosure,82,US
-2022-03-20,house hunting,42,US
-2022-03-20,housing market crash,36,US
-2022-03-20,mortgage rate,39,US
-2022-03-27,first time home buyer,54,US
-2022-03-27,foreclosure,79,US
-2022-03-27,house hunting,41,US
-2022-03-27,housing market crash,39,US
-2022-03-27,mortgage rate,43,US
-2022-04-03,first time home buyer,55,US
-2022-04-03,foreclosure,76,US
-2022-04-03,house hunting,46,US
-2022-04-03,housing market crash,39,US
-2022-04-03,mortgage rate,48,US
-2022-04-10,first time home buyer,58,US
-2022-04-10,foreclosure,68,US
-2022-04-10,house hunting,41,US
-2022-04-10,housing market crash,36,US
-2022-04-10,mortgage rate,47,US
-2022-04-17,first time home buyer,51,US
-2022-04-17,foreclosure,77,US
-2022-04-17,house hunting,44,US
-2022-04-17,housing market crash,41,US
-2022-04-17,mortgage rate,52,US
-2022-04-24,first time home buyer,50,US
-2022-04-24,foreclosure,74,US
-2022-04-24,house hunting,44,US
-2022-04-24,housing market crash,38,US
-2022-04-24,mortgage rate,43,US
-2022-05-01,first time home buyer,53,US
-2022-05-01,foreclosure,73,US
-2022-05-01,house hunting,39,US
-2022-05-01,housing market crash,40,US
-2022-05-01,mortgage rate,55,US
-2022-05-08,first time home buyer,48,US
-2022-05-08,foreclosure,64,US
-2022-05-08,house hunting,38,US
-2022-05-08,housing market crash,53,US
-2022-05-08,mortgage rate,39,US
-2022-05-15,first time home buyer,45,US
-2022-05-15,foreclosure,63,US
-2022-05-15,house hunting,38,US
-2022-05-15,housing market crash,38,US
-2022-05-15,mortgage rate,33,US
-2022-05-22,first time home buyer,41,US
-2022-05-22,foreclosure,65,US
-2022-05-22,house hunting,38,US
-2022-05-22,housing market crash,39,US
-2022-05-22,mortgage rate,30,US
-2022-05-29,first time home buyer,44,US
-2022-05-29,foreclosure,65,US
-2022-05-29,house hunting,43,US
-2022-05-29,housing market crash,74,US
-2022-05-29,mortgage rate,27,US
-2022-06-05,first time home buyer,47,US
-2022-06-05,foreclosure,68,US
-2022-06-05,house hunting,34,US
-2022-06-05,housing market crash,39,US
-2022-06-05,mortgage rate,29,US
-2022-06-12,first time home buyer,45,US
-2022-06-12,foreclosure,63,US
-2022-06-12,house hunting,41,US
-2022-06-12,housing market crash,60,US
-2022-06-12,mortgage rate,85,US
-2022-06-19,first time home buyer,44,US
-2022-06-19,foreclosure,66,US
-2022-06-19,house hunting,43,US
-2022-06-19,housing market crash,40,US
-2022-06-19,mortgage rate,42,US
-2022-06-26,first time home buyer,43,US
-2022-06-26,foreclosure,65,US
-2022-06-26,house hunting,38,US
-2022-06-26,housing market crash,100,US
-2022-06-26,mortgage rate,31,US
-2022-07-03,first time home buyer,44,US
-2022-07-03,foreclosure,66,US
-2022-07-03,house hunting,47,US
-2022-07-03,housing market crash,76,US
-2022-07-03,mortgage rate,32,US
-2022-07-10,first time home buyer,47,US
-2022-07-10,foreclosure,74,US
-2022-07-10,house hunting,43,US
-2022-07-10,housing market crash,40,US
-2022-07-10,mortgage rate,37,US
-2022-07-17,first time home buyer,46,US
-2022-07-17,foreclosure,70,US
-2022-07-17,house hunting,47,US
-2022-07-17,housing market crash,36,US
-2022-07-17,mortgage rate,34,US
-2022-07-24,first time home buyer,44,US
-2022-07-24,foreclosure,73,US
-2022-07-24,house hunting,51,US
-2022-07-24,housing market crash,54,US
-2022-07-24,mortgage rate,52,US
-2022-07-31,first time home buyer,49,US
-2022-07-31,foreclosure,70,US
-2022-07-31,house hunting,53,US
-2022-07-31,housing market crash,27,US
-2022-07-31,mortgage rate,33,US
-2022-08-07,first time home buyer,48,US
-2022-08-07,foreclosure,63,US
-2022-08-07,house hunting,48,US
-2022-08-07,housing market crash,32,US
-2022-08-07,mortgage rate,30,US
-2022-08-14,first time home buyer,48,US
-2022-08-14,foreclosure,65,US
-2022-08-14,house hunting,45,US
-2022-08-14,housing market crash,27,US
-2022-08-14,mortgage rate,27,US
-2022-08-21,first time home buyer,46,US
-2022-08-21,foreclosure,67,US
-2022-08-21,house hunting,46,US
-2022-08-21,housing market crash,43,US
-2022-08-21,mortgage rate,28,US
-2022-08-28,first time home buyer,64,US
-2022-08-28,foreclosure,66,US
-2022-08-28,house hunting,48,US
-2022-08-28,housing market crash,32,US
-2022-08-28,mortgage rate,29,US
-2022-09-04,first time home buyer,54,US
-2022-09-04,foreclosure,63,US
-2022-09-04,house hunting,49,US
-2022-09-04,housing market crash,39,US
-2022-09-04,mortgage rate,28,US
-2022-09-11,first time home buyer,48,US
-2022-09-11,foreclosure,65,US
-2022-09-11,house hunting,41,US
-2022-09-11,housing market crash,74,US
-2022-09-11,mortgage rate,34,US
-2022-09-18,first time home buyer,46,US
-2022-09-18,foreclosure,65,US
-2022-09-18,house hunting,50,US
-2022-09-18,housing market crash,35,US
-2022-09-18,mortgage rate,53,US
-2022-09-25,first time home buyer,41,US
-2022-09-25,foreclosure,62,US
-2022-09-25,house hunting,50,US
-2022-09-25,housing market crash,24,US
-2022-09-25,mortgage rate,43,US
-2022-10-02,first time home buyer,43,US
-2022-10-02,foreclosure,63,US
-2022-10-02,house hunting,58,US
-2022-10-02,housing market crash,25,US
-2022-10-02,mortgage rate,36,US
-2022-10-09,first time home buyer,41,US
-2022-10-09,foreclosure,64,US
-2022-10-09,house hunting,63,US
-2022-10-09,housing market crash,22,US
-2022-10-09,mortgage rate,37,US
-2022-10-16,first time home buyer,40,US
-2022-10-16,foreclosure,61,US
-2022-10-16,house hunting,63,US
-2022-10-16,housing market crash,22,US
-2022-10-16,mortgage rate,38,US
-2022-10-23,first time home buyer,39,US
-2022-10-23,foreclosure,73,US
-2022-10-23,house hunting,72,US
-2022-10-23,housing market crash,70,US
-2022-10-23,mortgage rate,36,US
-2022-10-30,first time home buyer,36,US
-2022-10-30,foreclosure,68,US
-2022-10-30,house hunting,69,US
-2022-10-30,housing market crash,67,US
-2022-10-30,mortgage rate,50,US
-2022-11-06,first time home buyer,38,US
-2022-11-06,foreclosure,58,US
-2022-11-06,house hunting,62,US
-2022-11-06,housing market crash,24,US
-2022-11-06,mortgage rate,32,US
-2022-11-13,first time home buyer,34,US
-2022-11-13,foreclosure,59,US
-2022-11-13,house hunting,68,US
-2022-11-13,housing market crash,21,US
-2022-11-13,mortgage rate,31,US
-2022-11-20,first time home buyer,33,US
-2022-11-20,foreclosure,51,US
-2022-11-20,house hunting,53,US
-2022-11-20,housing market crash,15,US
-2022-11-20,mortgage rate,24,US
-2022-11-27,first time home buyer,38,US
-2022-11-27,foreclosure,59,US
-2022-11-27,house hunting,53,US
-2022-11-27,housing market crash,19,US
-2022-11-27,mortgage rate,28,US
-2022-12-04,first time home buyer,35,US
-2022-12-04,foreclosure,56,US
-2022-12-04,house hunting,48,US
-2022-12-04,housing market crash,25,US
-2022-12-04,mortgage rate,26,US
-2022-12-11,first time home buyer,35,US
-2022-12-11,foreclosure,56,US
-2022-12-11,house hunting,45,US
-2022-12-11,housing market crash,20,US
-2022-12-11,mortgage rate,32,US
-2022-12-18,first time home buyer,32,US
-2022-12-18,foreclosure,57,US
-2022-12-18,house hunting,50,US
-2022-12-18,housing market crash,13,US
-2022-12-18,mortgage rate,23,US
-2022-12-25,first time home buyer,44,US
-2022-12-25,foreclosure,61,US
-2022-12-25,house hunting,53,US
-2022-12-25,housing market crash,36,US
-2022-12-25,mortgage rate,24,US
-2023-01-01,first time home buyer,55,US
-2023-01-01,foreclosure,71,US
-2023-01-01,house hunting,62,US
-2023-01-01,housing market crash,18,US
-2023-01-01,mortgage rate,27,US
-2023-01-08,first time home buyer,56,US
-2023-01-08,foreclosure,70,US
-2023-01-08,house hunting,48,US
-2023-01-08,housing market crash,16,US
-2023-01-08,mortgage rate,30,US
-2023-01-15,first time home buyer,61,US
-2023-01-15,foreclosure,74,US
-2023-01-15,house hunting,42,US
-2023-01-15,housing market crash,23,US
-2023-01-15,mortgage rate,33,US
-2023-01-22,first time home buyer,57,US
-2023-01-22,foreclosure,72,US
-2023-01-22,house hunting,47,US
-2023-01-22,housing market crash,89,US
-2023-01-22,mortgage rate,31,US
-2023-01-29,first time home buyer,61,US
-2023-01-29,foreclosure,71,US
-2023-01-29,house hunting,48,US
-2023-01-29,housing market crash,37,US
-2023-01-29,mortgage rate,37,US
-2023-02-05,first time home buyer,55,US
-2023-02-05,foreclosure,71,US
-2023-02-05,house hunting,41,US
-2023-02-05,housing market crash,36,US
-2023-02-05,mortgage rate,31,US
-2023-02-12,first time home buyer,52,US
-2023-02-12,foreclosure,74,US
-2023-02-12,house hunting,40,US
-2023-02-12,housing market crash,14,US
-2023-02-12,mortgage rate,29,US
-2023-02-19,first time home buyer,55,US
-2023-02-19,foreclosure,80,US
-2023-02-19,house hunting,44,US
-2023-02-19,housing market crash,16,US
-2023-02-19,mortgage rate,34,US
-2023-02-26,first time home buyer,58,US
-2023-02-26,foreclosure,75,US
-2023-02-26,house hunting,44,US
-2023-02-26,housing market crash,17,US
-2023-02-26,mortgage rate,37,US
-2023-03-05,first time home buyer,57,US
-2023-03-05,foreclosure,71,US
-2023-03-05,house hunting,45,US
-2023-03-05,housing market crash,19,US
-2023-03-05,mortgage rate,38,US
-2023-03-12,first time home buyer,58,US
-2023-03-12,foreclosure,73,US
-2023-03-12,house hunting,41,US
-2023-03-12,housing market crash,20,US
-2023-03-12,mortgage rate,43,US
-2023-03-19,first time home buyer,62,US
-2023-03-19,foreclosure,79,US
-2023-03-19,house hunting,46,US
-2023-03-19,housing market crash,20,US
-2023-03-19,mortgage rate,42,US
-2023-03-26,first time home buyer,62,US
-2023-03-26,foreclosure,73,US
-2023-03-26,house hunting,43,US
-2023-03-26,housing market crash,17,US
-2023-03-26,mortgage rate,32,US
-2023-04-02,first time home buyer,58,US
-2023-04-02,foreclosure,67,US
-2023-04-02,house hunting,40,US
-2023-04-02,housing market crash,18,US
-2023-04-02,mortgage rate,32,US
-2023-04-09,first time home buyer,56,US
-2023-04-09,foreclosure,74,US
-2023-04-09,house hunting,37,US
-2023-04-09,housing market crash,15,US
-2023-04-09,mortgage rate,31,US
-2023-04-16,first time home buyer,61,US
-2023-04-16,foreclosure,73,US
-2023-04-16,house hunting,42,US
-2023-04-16,housing market crash,21,US
-2023-04-16,mortgage rate,39,US
-2023-04-23,first time home buyer,53,US
-2023-04-23,foreclosure,72,US
-2023-04-23,house hunting,40,US
-2023-04-23,housing market crash,17,US
-2023-04-23,mortgage rate,38,US
-2023-04-30,first time home buyer,51,US
-2023-04-30,foreclosure,74,US
-2023-04-30,house hunting,36,US
-2023-04-30,housing market crash,21,US
-2023-04-30,mortgage rate,38,US
-2023-05-07,first time home buyer,48,US
-2023-05-07,foreclosure,64,US
-2023-05-07,house hunting,39,US
-2023-05-07,housing market crash,17,US
-2023-05-07,mortgage rate,29,US
-2023-05-14,first time home buyer,49,US
-2023-05-14,foreclosure,69,US
-2023-05-14,house hunting,37,US
-2023-05-14,housing market crash,16,US
-2023-05-14,mortgage rate,30,US
-2023-05-21,first time home buyer,50,US
-2023-05-21,foreclosure,69,US
-2023-05-21,house hunting,33,US
-2023-05-21,housing market crash,42,US
-2023-05-21,mortgage rate,29,US
-2023-05-28,first time home buyer,49,US
-2023-05-28,foreclosure,66,US
-2023-05-28,house hunting,38,US
-2023-05-28,housing market crash,56,US
-2023-05-28,mortgage rate,31,US
-2023-06-04,first time home buyer,48,US
-2023-06-04,foreclosure,73,US
-2023-06-04,house hunting,35,US
-2023-06-04,housing market crash,100,US
-2023-06-04,mortgage rate,31,US
-2023-06-11,first time home buyer,50,US
-2023-06-11,foreclosure,71,US
-2023-06-11,house hunting,36,US
-2023-06-11,housing market crash,16,US
-2023-06-11,mortgage rate,30,US
-2023-06-18,first time home buyer,47,US
-2023-06-18,foreclosure,64,US
-2023-06-18,house hunting,39,US
-2023-06-18,housing market crash,27,US
-2023-06-18,mortgage rate,27,US
-2023-06-25,first time home buyer,49,US
-2023-06-25,foreclosure,71,US
-2023-06-25,house hunting,41,US
-2023-06-25,housing market crash,17,US
-2023-06-25,mortgage rate,28,US
-2023-07-02,first time home buyer,53,US
-2023-07-02,foreclosure,71,US
-2023-07-02,house hunting,41,US
-2023-07-02,housing market crash,64,US
-2023-07-02,mortgage rate,29,US
-2023-07-09,first time home buyer,55,US
-2023-07-09,foreclosure,78,US
-2023-07-09,house hunting,45,US
-2023-07-09,housing market crash,15,US
-2023-07-09,mortgage rate,33,US
-2023-07-16,first time home buyer,56,US
-2023-07-16,foreclosure,73,US
-2023-07-16,house hunting,42,US
-2023-07-16,housing market crash,17,US
-2023-07-16,mortgage rate,28,US
-2023-07-23,first time home buyer,52,US
-2023-07-23,foreclosure,78,US
-2023-07-23,house hunting,43,US
-2023-07-23,housing market crash,16,US
-2023-07-23,mortgage rate,35,US
-2023-07-30,first time home buyer,50,US
-2023-07-30,foreclosure,73,US
-2023-07-30,house hunting,41,US
-2023-07-30,housing market crash,16,US
-2023-07-30,mortgage rate,31,US
-2023-08-06,first time home buyer,47,US
-2023-08-06,foreclosure,68,US
-2023-08-06,house hunting,38,US
-2023-08-06,housing market crash,19,US
-2023-08-06,mortgage rate,29,US
-2023-08-13,first time home buyer,46,US
-2023-08-13,foreclosure,69,US
-2023-08-13,house hunting,40,US
-2023-08-13,housing market crash,17,US
-2023-08-13,mortgage rate,32,US
-2023-08-20,first time home buyer,46,US
-2023-08-20,foreclosure,65,US
-2023-08-20,house hunting,37,US
-2023-08-20,housing market crash,20,US
-2023-08-20,mortgage rate,32,US
-2023-08-27,first time home buyer,43,US
-2023-08-27,foreclosure,69,US
-2023-08-27,house hunting,43,US
-2023-08-27,housing market crash,24,US
-2023-08-27,mortgage rate,31,US
-2023-09-03,first time home buyer,41,US
-2023-09-03,foreclosure,64,US
-2023-09-03,house hunting,40,US
-2023-09-03,housing market crash,30,US
-2023-09-03,mortgage rate,27,US
-2023-09-10,first time home buyer,42,US
-2023-09-10,foreclosure,70,US
-2023-09-10,house hunting,45,US
-2023-09-10,housing market crash,61,US
-2023-09-10,mortgage rate,28,US
-2023-09-17,first time home buyer,40,US
-2023-09-17,foreclosure,70,US
-2023-09-17,house hunting,46,US
-2023-09-17,housing market crash,16,US
-2023-09-17,mortgage rate,32,US
-2023-09-24,first time home buyer,38,US
-2023-09-24,foreclosure,66,US
-2023-09-24,house hunting,48,US
-2023-09-24,housing market crash,15,US
-2023-09-24,mortgage rate,30,US
-2023-10-01,first time home buyer,38,US
-2023-10-01,foreclosure,65,US
-2023-10-01,house hunting,58,US
-2023-10-01,housing market crash,16,US
-2023-10-01,mortgage rate,32,US
-2023-10-08,first time home buyer,37,US
-2023-10-08,foreclosure,60,US
-2023-10-08,house hunting,61,US
-2023-10-08,housing market crash,14,US
-2023-10-08,mortgage rate,29,US
-2023-10-15,first time home buyer,38,US
-2023-10-15,foreclosure,66,US
-2023-10-15,house hunting,58,US
-2023-10-15,housing market crash,14,US
-2023-10-15,mortgage rate,33,US
-2023-10-22,first time home buyer,36,US
-2023-10-22,foreclosure,64,US
-2023-10-22,house hunting,68,US
-2023-10-22,housing market crash,16,US
-2023-10-22,mortgage rate,32,US
-2023-10-29,first time home buyer,36,US
-2023-10-29,foreclosure,66,US
-2023-10-29,house hunting,65,US
-2023-10-29,housing market crash,16,US
-2023-10-29,mortgage rate,33,US
-2023-11-05,first time home buyer,35,US
-2023-11-05,foreclosure,62,US
-2023-11-05,house hunting,51,US
-2023-11-05,housing market crash,14,US
-2023-11-05,mortgage rate,35,US
-2023-11-12,first time home buyer,36,US
-2023-11-12,foreclosure,68,US
-2023-11-12,house hunting,55,US
-2023-11-12,housing market crash,13,US
-2023-11-12,mortgage rate,32,US
-2023-11-19,first time home buyer,29,US
-2023-11-19,foreclosure,52,US
-2023-11-19,house hunting,57,US
-2023-11-19,housing market crash,12,US
-2023-11-19,mortgage rate,27,US
-2023-11-26,first time home buyer,35,US
-2023-11-26,foreclosure,67,US
-2023-11-26,house hunting,49,US
-2023-11-26,housing market crash,14,US
-2023-11-26,mortgage rate,28,US
-2023-12-03,first time home buyer,37,US
-2023-12-03,foreclosure,63,US
-2023-12-03,house hunting,45,US
-2023-12-03,housing market crash,13,US
-2023-12-03,mortgage rate,34,US
-2023-12-10,first time home buyer,34,US
-2023-12-10,foreclosure,62,US
-2023-12-10,house hunting,46,US
-2023-12-10,housing market crash,15,US
-2023-12-10,mortgage rate,37,US
-2023-12-17,first time home buyer,32,US
-2023-12-17,foreclosure,61,US
-2023-12-17,house hunting,44,US
-2023-12-17,housing market crash,12,US
-2023-12-17,mortgage rate,28,US
-2023-12-24,first time home buyer,39,US
-2023-12-24,foreclosure,63,US
-2023-12-24,house hunting,41,US
-2023-12-24,housing market crash,12,US
-2023-12-24,mortgage rate,31,US
-2023-12-31,first time home buyer,51,US
-2023-12-31,foreclosure,69,US
-2023-12-31,house hunting,45,US
-2023-12-31,housing market crash,12,US
-2023-12-31,mortgage rate,30,US
-2024-01-07,first time home buyer,51,US
-2024-01-07,foreclosure,72,US
-2024-01-07,house hunting,43,US
-2024-01-07,housing market crash,10,US
-2024-01-07,mortgage rate,32,US
-2024-01-14,first time home buyer,50,US
-2024-01-14,foreclosure,64,US
-2024-01-14,house hunting,44,US
-2024-01-14,housing market crash,11,US
-2024-01-14,mortgage rate,31,US
-2024-01-21,first time home buyer,53,US
-2024-01-21,foreclosure,67,US
-2024-01-21,house hunting,41,US
-2024-01-21,housing market crash,11,US
-2024-01-21,mortgage rate,33,US
-2024-01-28,first time home buyer,51,US
-2024-01-28,foreclosure,69,US
-2024-01-28,house hunting,41,US
-2024-01-28,housing market crash,9,US
-2024-01-28,mortgage rate,36,US
-2024-02-04,first time home buyer,50,US
-2024-02-04,foreclosure,67,US
-2024-02-04,house hunting,41,US
-2024-02-04,housing market crash,10,US
-2024-02-04,mortgage rate,32,US
-2024-02-11,first time home buyer,43,US
-2024-02-11,foreclosure,64,US
-2024-02-11,house hunting,34,US
-2024-02-11,housing market crash,10,US
-2024-02-11,mortgage rate,29,US
-2024-02-18,first time home buyer,52,US
-2024-02-18,foreclosure,72,US
-2024-02-18,house hunting,40,US
-2024-02-18,housing market crash,11,US
-2024-02-18,mortgage rate,36,US
-2024-02-25,first time home buyer,50,US
-2024-02-25,foreclosure,71,US
-2024-02-25,house hunting,44,US
-2024-02-25,housing market crash,11,US
-2024-02-25,mortgage rate,33,US
-2024-03-03,first time home buyer,54,US
-2024-03-03,foreclosure,71,US
-2024-03-03,house hunting,50,US
-2024-03-03,housing market crash,12,US
-2024-03-03,mortgage rate,35,US
-2024-03-10,first time home buyer,54,US
-2024-03-10,foreclosure,70,US
-2024-03-10,house hunting,45,US
-2024-03-10,housing market crash,11,US
-2024-03-10,mortgage rate,37,US
-2024-03-17,first time home buyer,57,US
-2024-03-17,foreclosure,70,US
-2024-03-17,house hunting,37,US
-2024-03-17,housing market crash,13,US
-2024-03-17,mortgage rate,38,US
-2024-03-24,first time home buyer,50,US
-2024-03-24,foreclosure,65,US
-2024-03-24,house hunting,41,US
-2024-03-24,housing market crash,11,US
-2024-03-24,mortgage rate,32,US
-2024-03-31,first time home buyer,53,US
-2024-03-31,foreclosure,65,US
-2024-03-31,house hunting,35,US
-2024-03-31,housing market crash,13,US
-2024-03-31,mortgage rate,34,US
-2024-04-07,first time home buyer,52,US
-2024-04-07,foreclosure,66,US
-2024-04-07,house hunting,38,US
-2024-04-07,housing market crash,12,US
-2024-04-07,mortgage rate,35,US
-2024-04-14,first time home buyer,52,US
-2024-04-14,foreclosure,67,US
-2024-04-14,house hunting,36,US
-2024-04-14,housing market crash,13,US
-2024-04-14,mortgage rate,35,US
-2024-04-21,first time home buyer,47,US
-2024-04-21,foreclosure,68,US
-2024-04-21,house hunting,43,US
-2024-04-21,housing market crash,12,US
-2024-04-21,mortgage rate,32,US
-2024-04-28,first time home buyer,45,US
-2024-04-28,foreclosure,68,US
-2024-04-28,house hunting,45,US
-2024-04-28,housing market crash,13,US
-2024-04-28,mortgage rate,34,US
-2024-05-05,first time home buyer,42,US
-2024-05-05,foreclosure,68,US
-2024-05-05,house hunting,45,US
-2024-05-05,housing market crash,11,US
-2024-05-05,mortgage rate,32,US
-2024-05-12,first time home buyer,44,US
-2024-05-12,foreclosure,69,US
-2024-05-12,house hunting,45,US
-2024-05-12,housing market crash,13,US
-2024-05-12,mortgage rate,31,US
-2024-05-19,first time home buyer,40,US
-2024-05-19,foreclosure,100,US
-2024-05-19,house hunting,38,US
-2024-05-19,housing market crash,12,US
-2024-05-19,mortgage rate,28,US
-2024-05-26,first time home buyer,43,US
-2024-05-26,foreclosure,67,US
-2024-05-26,house hunting,36,US
-2024-05-26,housing market crash,11,US
-2024-05-26,mortgage rate,30,US
-2024-06-02,first time home buyer,46,US
-2024-06-02,foreclosure,72,US
-2024-06-02,house hunting,41,US
-2024-06-02,housing market crash,11,US
-2024-06-02,mortgage rate,30,US
-2024-06-09,first time home buyer,44,US
-2024-06-09,foreclosure,61,US
-2024-06-09,house hunting,38,US
-2024-06-09,housing market crash,15,US
-2024-06-09,mortgage rate,33,US
-2024-06-16,first time home buyer,41,US
-2024-06-16,foreclosure,65,US
-2024-06-16,house hunting,40,US
-2024-06-16,housing market crash,14,US
-2024-06-16,mortgage rate,29,US
-2024-06-23,first time home buyer,47,US
-2024-06-23,foreclosure,68,US
-2024-06-23,house hunting,45,US
-2024-06-23,housing market crash,12,US
-2024-06-23,mortgage rate,29,US
-2024-06-30,first time home buyer,45,US
-2024-06-30,foreclosure,66,US
-2024-06-30,house hunting,35,US
-2024-06-30,housing market crash,14,US
-2024-06-30,mortgage rate,28,US
-2024-07-07,first time home buyer,47,US
-2024-07-07,foreclosure,70,US
-2024-07-07,house hunting,45,US
-2024-07-07,housing market crash,13,US
-2024-07-07,mortgage rate,31,US
-2024-07-14,first time home buyer,40,US
-2024-07-14,foreclosure,66,US
-2024-07-14,house hunting,39,US
-2024-07-14,housing market crash,11,US
-2024-07-14,mortgage rate,30,US
-2024-07-21,first time home buyer,44,US
-2024-07-21,foreclosure,66,US
-2024-07-21,house hunting,38,US
-2024-07-21,housing market crash,11,US
-2024-07-21,mortgage rate,30,US
-2024-07-28,first time home buyer,41,US
-2024-07-28,foreclosure,69,US
-2024-07-28,house hunting,33,US
-2024-07-28,housing market crash,12,US
-2024-07-28,mortgage rate,36,US
-2024-08-04,first time home buyer,44,US
-2024-08-04,foreclosure,64,US
-2024-08-04,house hunting,42,US
-2024-08-04,housing market crash,22,US
-2024-08-04,mortgage rate,52,US
-2024-08-11,first time home buyer,51,US
-2024-08-11,foreclosure,66,US
-2024-08-11,house hunting,45,US
-2024-08-11,housing market crash,10,US
-2024-08-11,mortgage rate,37,US
-2024-08-18,first time home buyer,53,US
-2024-08-18,foreclosure,66,US
-2024-08-18,house hunting,43,US
-2024-08-18,housing market crash,11,US
-2024-08-18,mortgage rate,34,US
-2024-08-25,first time home buyer,53,US
-2024-08-25,foreclosure,70,US
-2024-08-25,house hunting,50,US
-2024-08-25,housing market crash,10,US
-2024-08-25,mortgage rate,32,US
-2024-09-01,first time home buyer,45,US
-2024-09-01,foreclosure,66,US
-2024-09-01,house hunting,51,US
-2024-09-01,housing market crash,10,US
-2024-09-01,mortgage rate,32,US
-2024-09-08,first time home buyer,47,US
-2024-09-08,foreclosure,61,US
-2024-09-08,house hunting,47,US
-2024-09-08,housing market crash,11,US
-2024-09-08,mortgage rate,37,US
-2024-09-15,first time home buyer,51,US
-2024-09-15,foreclosure,65,US
-2024-09-15,house hunting,57,US
-2024-09-15,housing market crash,9,US
-2024-09-15,mortgage rate,88,US
-2024-09-22,first time home buyer,46,US
-2024-09-22,foreclosure,63,US
-2024-09-22,house hunting,47,US
-2024-09-22,housing market crash,8,US
-2024-09-22,mortgage rate,42,US
-2024-09-29,first time home buyer,50,US
-2024-09-29,foreclosure,65,US
-2024-09-29,house hunting,53,US
-2024-09-29,housing market crash,8,US
-2024-09-29,mortgage rate,34,US
-2024-10-06,first time home buyer,40,US
-2024-10-06,foreclosure,59,US
-2024-10-06,house hunting,54,US
-2024-10-06,housing market crash,7,US
-2024-10-06,mortgage rate,32,US
-2024-10-13,first time home buyer,43,US
-2024-10-13,foreclosure,58,US
-2024-10-13,house hunting,55,US
-2024-10-13,housing market crash,8,US
-2024-10-13,mortgage rate,31,US
-2024-10-20,first time home buyer,44,US
-2024-10-20,foreclosure,62,US
-2024-10-20,house hunting,59,US
-2024-10-20,housing market crash,9,US
-2024-10-20,mortgage rate,33,US
-2024-10-27,first time home buyer,44,US
-2024-10-27,foreclosure,67,US
-2024-10-27,house hunting,63,US
-2024-10-27,housing market crash,7,US
-2024-10-27,mortgage rate,33,US
-2024-11-03,first time home buyer,46,US
-2024-11-03,foreclosure,58,US
-2024-11-03,house hunting,69,US
-2024-11-03,housing market crash,9,US
-2024-11-03,mortgage rate,43,US
-2024-11-10,first time home buyer,45,US
-2024-11-10,foreclosure,60,US
-2024-11-10,house hunting,65,US
-2024-11-10,housing market crash,9,US
-2024-11-10,mortgage rate,35,US
-2024-11-17,first time home buyer,42,US
-2024-11-17,foreclosure,63,US
-2024-11-17,house hunting,60,US
-2024-11-17,housing market crash,9,US
-2024-11-17,mortgage rate,32,US
-2024-11-24,first time home buyer,35,US
-2024-11-24,foreclosure,53,US
-2024-11-24,house hunting,57,US
-2024-11-24,housing market crash,8,US
-2024-11-24,mortgage rate,27,US
-2024-12-01,first time home buyer,42,US
-2024-12-01,foreclosure,63,US
-2024-12-01,house hunting,50,US
-2024-12-01,housing market crash,8,US
-2024-12-01,mortgage rate,31,US
-2024-12-08,first time home buyer,38,US
-2024-12-08,foreclosure,67,US
-2024-12-08,house hunting,46,US
-2024-12-08,housing market crash,5,US
-2024-12-08,mortgage rate,31,US
-2024-12-15,first time home buyer,35,US
-2024-12-15,foreclosure,56,US
-2024-12-15,house hunting,48,US
-2024-12-15,housing market crash,7,US
-2024-12-15,mortgage rate,43,US
-2024-12-22,first time home buyer,40,US
-2024-12-22,foreclosure,49,US
-2024-12-22,house hunting,45,US
-2024-12-22,housing market crash,8,US
-2024-12-22,mortgage rate,28,US
-2024-12-29,first time home buyer,55,US
-2024-12-29,foreclosure,68,US
-2024-12-29,house hunting,51,US
-2024-12-29,housing market crash,8,US
-2024-12-29,mortgage rate,33,US
-2025-01-05,first time home buyer,51,US
-2025-01-05,foreclosure,70,US
-2025-01-05,house hunting,46,US
-2025-01-05,housing market crash,9,US
-2025-01-05,mortgage rate,29,US
-2025-01-12,first time home buyer,55,US
-2025-01-12,foreclosure,76,US
-2025-01-12,house hunting,44,US
-2025-01-12,housing market crash,8,US
-2025-01-12,mortgage rate,39,US
-2025-01-19,first time home buyer,53,US
-2025-01-19,foreclosure,64,US
-2025-01-19,house hunting,42,US
-2025-01-19,housing market crash,8,US
-2025-01-19,mortgage rate,35,US
-2025-01-26,first time home buyer,53,US
-2025-01-26,foreclosure,73,US
-2025-01-26,house hunting,48,US
-2025-01-26,housing market crash,10,US
-2025-01-26,mortgage rate,34,US
-2025-02-02,first time home buyer,53,US
-2025-02-02,foreclosure,66,US
-2025-02-02,house hunting,47,US
-2025-02-02,housing market crash,9,US
-2025-02-02,mortgage rate,33,US
-2025-02-09,first time home buyer,47,US
-2025-02-09,foreclosure,66,US
-2025-02-09,house hunting,43,US
-2025-02-09,housing market crash,8,US
-2025-02-09,mortgage rate,30,US
-2025-02-16,first time home buyer,52,US
-2025-02-16,foreclosure,73,US
-2025-02-16,house hunting,39,US
-2025-02-16,housing market crash,14,US
-2025-02-16,mortgage rate,33,US
-2025-02-23,first time home buyer,50,US
-2025-02-23,foreclosure,71,US
-2025-02-23,house hunting,44,US
-2025-02-23,housing market crash,15,US
-2025-02-23,mortgage rate,37,US
-2025-03-02,first time home buyer,52,US
-2025-03-02,foreclosure,71,US
-2025-03-02,house hunting,37,US
-2025-03-02,housing market crash,14,US
-2025-03-02,mortgage rate,45,US
-2025-03-09,first time home buyer,49,US
-2025-03-09,foreclosure,71,US
-2025-03-09,house hunting,47,US
-2025-03-09,housing market crash,16,US
-2025-03-09,mortgage rate,42,US
-2025-03-16,first time home buyer,53,US
-2025-03-16,foreclosure,70,US
-2025-03-16,house hunting,37,US
-2025-03-16,housing market crash,12,US
-2025-03-16,mortgage rate,35,US
-2025-03-23,first time home buyer,54,US
-2025-03-23,foreclosure,72,US
-2025-03-23,house hunting,44,US
-2025-03-23,housing market crash,12,US
-2025-03-23,mortgage rate,35,US
-2025-03-30,first time home buyer,55,US
-2025-03-30,foreclosure,76,US
-2025-03-30,house hunting,39,US
-2025-03-30,housing market crash,19,US
-2025-03-30,mortgage rate,47,US
-2025-04-06,first time home buyer,48,US
-2025-04-06,foreclosure,73,US
-2025-04-06,house hunting,42,US
-2025-04-06,housing market crash,21,US
-2025-04-06,mortgage rate,53,US
-2025-04-13,first time home buyer,49,US
-2025-04-13,foreclosure,68,US
-2025-04-13,house hunting,38,US
-2025-04-13,housing market crash,12,US
-2025-04-13,mortgage rate,38,US
-2025-04-20,first time home buyer,48,US
-2025-04-20,foreclosure,68,US
-2025-04-20,house hunting,43,US
-2025-04-20,housing market crash,12,US
-2025-04-20,mortgage rate,33,US
-2025-04-27,first time home buyer,47,US
-2025-04-27,foreclosure,75,US
-2025-04-27,house hunting,40,US
-2025-04-27,housing market crash,12,US
-2025-04-27,mortgage rate,35,US
-2025-05-04,first time home buyer,48,US
-2025-05-04,foreclosure,76,US
-2025-05-04,house hunting,49,US
-2025-05-04,housing market crash,10,US
-2025-05-04,mortgage rate,34,US
-2025-05-11,first time home buyer,47,US
-2025-05-11,foreclosure,69,US
-2025-05-11,house hunting,47,US
-2025-05-11,housing market crash,9,US
-2025-05-11,mortgage rate,33,US
-2025-05-18,first time home buyer,41,US
-2025-05-18,foreclosure,68,US
-2025-05-18,house hunting,37,US
-2025-05-18,housing market crash,9,US
-2025-05-18,mortgage rate,33,US
-2025-05-25,first time home buyer,45,US
-2025-05-25,foreclosure,71,US
-2025-05-25,house hunting,42,US
-2025-05-25,housing market crash,12,US
-2025-05-25,mortgage rate,33,US
-2025-06-01,first time home buyer,50,US
-2025-06-01,foreclosure,76,US
-2025-06-01,house hunting,36,US
-2025-06-01,housing market crash,11,US
-2025-06-01,mortgage rate,33,US
-2025-06-08,first time home buyer,46,US
-2025-06-08,foreclosure,71,US
-2025-06-08,house hunting,36,US
-2025-06-08,housing market crash,11,US
-2025-06-08,mortgage rate,32,US
-2025-06-15,first time home buyer,46,US
-2025-06-15,foreclosure,75,US
-2025-06-15,house hunting,42,US
-2025-06-15,housing market crash,9,US
-2025-06-15,mortgage rate,33,US
-2025-06-22,first time home buyer,46,US
-2025-06-22,foreclosure,69,US
-2025-06-22,house hunting,45,US
-2025-06-22,housing market crash,9,US
-2025-06-22,mortgage rate,33,US
-2025-06-29,first time home buyer,47,US
-2025-06-29,foreclosure,75,US
-2025-06-29,house hunting,44,US
-2025-06-29,housing market crash,9,US
-2025-06-29,mortgage rate,38,US
-2025-07-06,first time home buyer,56,US
-2025-07-06,foreclosure,80,US
-2025-07-06,house hunting,50,US
-2025-07-06,housing market crash,11,US
-2025-07-06,mortgage rate,36,US
-2025-07-13,first time home buyer,54,US
-2025-07-13,foreclosure,86,US
-2025-07-13,house hunting,58,US
-2025-07-13,housing market crash,9,US
-2025-07-13,mortgage rate,51,US
-2025-07-20,first time home buyer,53,US
-2025-07-20,foreclosure,87,US
-2025-07-20,house hunting,81,US
-2025-07-20,housing market crash,11,US
-2025-07-20,mortgage rate,57,US
-2025-07-27,first time home buyer,50,US
-2025-07-27,foreclosure,84,US
-2025-07-27,house hunting,100,US
-2025-07-27,housing market crash,12,US
-2025-07-27,mortgage rate,64,US
-2025-08-03,first time home buyer,50,US
-2025-08-03,foreclosure,85,US
-2025-08-03,house hunting,98,US
-2025-08-03,housing market crash,10,US
-2025-08-03,mortgage rate,51,US
-2025-08-10,first time home buyer,46,US
-2025-08-10,foreclosure,77,US
-2025-08-10,house hunting,87,US
-2025-08-10,housing market crash,9,US
-2025-08-10,mortgage rate,48,US
-2025-08-17,first time home buyer,45,US
-2025-08-17,foreclosure,81,US
-2025-08-17,house hunting,65,US
-2025-08-17,housing market crash,9,US
-2025-08-17,mortgage rate,40,US
-2025-08-24,first time home buyer,41,US
-2025-08-24,foreclosure,78,US
-2025-08-24,house hunting,71,US
-2025-08-24,housing market crash,7,US
-2025-08-24,mortgage rate,38,US
-2025-08-31,first time home buyer,40,US
-2025-08-31,foreclosure,74,US
-2025-08-31,house hunting,86,US
-2025-08-31,housing market crash,9,US
-2025-08-31,mortgage rate,42,US
-2025-09-07,first time home buyer,37,US
-2025-09-07,foreclosure,70,US
-2025-09-07,house hunting,59,US
-2025-09-07,housing market crash,8,US
-2025-09-07,mortgage rate,49,US
-2025-09-14,first time home buyer,40,US
-2025-09-14,foreclosure,69,US
-2025-09-14,house hunting,54,US
-2025-09-14,housing market crash,7,US
-2025-09-14,mortgage rate,100,US
-2025-09-21,first time home buyer,41,US
-2025-09-21,foreclosure,71,US
-2025-09-21,house hunting,64,US
-2025-09-21,housing market crash,8,US
-2025-09-21,mortgage rate,54,US
-2025-09-28,first time home buyer,38,US
-2025-09-28,foreclosure,80,US
-2025-09-28,house hunting,65,US
-2025-09-28,housing market crash,8,US
-2025-09-28,mortgage rate,42,US
-2025-10-05,first time home buyer,40,US
-2025-10-05,foreclosure,80,US
-2025-10-05,house hunting,73,US
-2025-10-05,housing market crash,8,US
-2025-10-05,mortgage rate,37,US
-2025-10-12,first time home buyer,42,US
-2025-10-12,foreclosure,82,US
-2025-10-12,house hunting,72,US
-2025-10-12,housing market crash,9,US
-2025-10-12,mortgage rate,39,US
-2025-10-19,first time home buyer,40,US
-2025-10-19,foreclosure,77,US
-2025-10-19,house hunting,84,US
-2025-10-19,housing market crash,9,US
-2025-10-19,mortgage rate,43,US
-2025-10-26,first time home buyer,39,US
-2025-10-26,foreclosure,73,US
-2025-10-26,house hunting,84,US
-2025-10-26,housing market crash,9,US
-2025-10-26,mortgage rate,77,US
-2025-11-02,first time home buyer,41,US
-2025-11-02,foreclosure,81,US
-2025-11-02,house hunting,77,US
-2025-11-02,housing market crash,9,US
-2025-11-02,mortgage rate,54,US
-2025-11-09,first time home buyer,46,US
-2025-11-09,foreclosure,79,US
-2025-11-09,house hunting,89,US
-2025-11-09,housing market crash,10,US
-2025-11-09,mortgage rate,58,US
-2025-11-16,first time home buyer,43,US
-2025-11-16,foreclosure,86,US
-2025-11-16,house hunting,93,US
-2025-11-16,housing market crash,11,US
-2025-11-16,mortgage rate,50,US
-2025-11-23,first time home buyer,35,US
-2025-11-23,foreclosure,80,US
-2025-11-23,house hunting,81,US
-2025-11-23,housing market crash,16,US
-2025-11-23,mortgage rate,48,US
-2025-11-30,first time home buyer,38,US
-2025-11-30,foreclosure,84,US
-2025-11-30,house hunting,86,US
-2025-11-30,housing market crash,16,US
-2025-11-30,mortgage rate,59,US
-2025-12-07,first time home buyer,36,US
-2025-12-07,foreclosure,79,US
-2025-12-07,house hunting,79,US
-2025-12-07,housing market crash,12,US
-2025-12-07,mortgage rate,85,US
-2025-12-14,first time home buyer,34,US
-2025-12-14,foreclosure,80,US
-2025-12-14,house hunting,76,US
-2025-12-14,housing market crash,9,US
-2025-12-14,mortgage rate,51,US
-2025-12-21,first time home buyer,37,US
-2025-12-21,foreclosure,72,US
-2025-12-21,house hunting,67,US
-2025-12-21,housing market crash,8,US
-2025-12-21,mortgage rate,38,US
-2025-12-28,first time home buyer,50,US
-2025-12-28,foreclosure,86,US
-2025-12-28,house hunting,77,US
-2025-12-28,housing market crash,8,US
-2025-12-28,mortgage rate,51,US
-2026-01-04,first time home buyer,55,US
-2026-01-04,foreclosure,88,US
-2026-01-04,house hunting,82,US
-2026-01-04,housing market crash,8,US
-2026-01-04,mortgage rate,61,US
-2026-01-11,first time home buyer,53,US
-2026-01-11,foreclosure,88,US
-2026-01-11,house hunting,75,US
-2026-01-11,housing market crash,8,US
-2026-01-11,mortgage rate,68,US
-2026-01-18,first time home buyer,51,US
-2026-01-18,foreclosure,92,US
-2026-01-18,house hunting,74,US
-2026-01-18,housing market crash,9,US
-2026-01-18,mortgage rate,55,US
-2026-01-25,first time home buyer,45,US
-2026-01-25,foreclosure,74,US
-2026-01-25,house hunting,51,US
-2026-01-25,housing market crash,6,US
-2026-01-25,mortgage rate,35,US
-2026-02-01,first time home buyer,47,US
-2026-02-01,foreclosure,88,US
-2026-02-01,house hunting,58,US
-2026-02-01,housing market crash,7,US
-2026-02-01,mortgage rate,36,US
+week_start_date,search_term,category,avg_interest_score,region
+2021-01-31,Estate Sales,Involuntary Supply,46,US
+2021-01-31,Foreclosure Auctions,Distress Signal,93,US
+2021-01-31,Home Insurance,Financial Friction,34,US
+2021-01-31,Mortgage Assumption,Market Access,3,US
+2021-02-07,Estate Sales,Involuntary Supply,44,US
+2021-02-07,Foreclosure Auctions,Distress Signal,94,US
+2021-02-07,Home Insurance,Financial Friction,35,US
+2021-02-07,Mortgage Assumption,Market Access,3,US
+2021-02-14,Estate Sales,Involuntary Supply,56,US
+2021-02-14,Foreclosure Auctions,Distress Signal,98,US
+2021-02-14,Home Insurance,Financial Friction,35,US
+2021-02-14,Mortgage Assumption,Market Access,3,US
+2021-02-21,Estate Sales,Involuntary Supply,57,US
+2021-02-21,Foreclosure Auctions,Distress Signal,100,US
+2021-02-21,Home Insurance,Financial Friction,33,US
+2021-02-21,Mortgage Assumption,Market Access,7,US
+2021-02-28,Estate Sales,Involuntary Supply,59,US
+2021-02-28,Foreclosure Auctions,Distress Signal,96,US
+2021-02-28,Home Insurance,Financial Friction,31,US
+2021-02-28,Mortgage Assumption,Market Access,7,US
+2021-03-07,Estate Sales,Involuntary Supply,57,US
+2021-03-07,Foreclosure Auctions,Distress Signal,96,US
+2021-03-07,Home Insurance,Financial Friction,32,US
+2021-03-07,Mortgage Assumption,Market Access,5,US
+2021-03-14,Estate Sales,Involuntary Supply,60,US
+2021-03-14,Foreclosure Auctions,Distress Signal,95,US
+2021-03-14,Home Insurance,Financial Friction,36,US
+2021-03-14,Mortgage Assumption,Market Access,9,US
+2021-03-21,Estate Sales,Involuntary Supply,52,US
+2021-03-21,Foreclosure Auctions,Distress Signal,94,US
+2021-03-21,Home Insurance,Financial Friction,33,US
+2021-03-21,Mortgage Assumption,Market Access,8,US
+2021-03-28,Estate Sales,Involuntary Supply,57,US
+2021-03-28,Foreclosure Auctions,Distress Signal,97,US
+2021-03-28,Home Insurance,Financial Friction,34,US
+2021-03-28,Mortgage Assumption,Market Access,4,US
+2021-04-04,Estate Sales,Involuntary Supply,69,US
+2021-04-04,Foreclosure Auctions,Distress Signal,91,US
+2021-04-04,Home Insurance,Financial Friction,33,US
+2021-04-04,Mortgage Assumption,Market Access,6,US
+2021-04-11,Estate Sales,Involuntary Supply,73,US
+2021-04-11,Foreclosure Auctions,Distress Signal,91,US
+2021-04-11,Home Insurance,Financial Friction,33,US
+2021-04-11,Mortgage Assumption,Market Access,6,US
+2021-04-18,Estate Sales,Involuntary Supply,63,US
+2021-04-18,Foreclosure Auctions,Distress Signal,88,US
+2021-04-18,Home Insurance,Financial Friction,33,US
+2021-04-18,Mortgage Assumption,Market Access,7,US
+2021-04-25,Estate Sales,Involuntary Supply,62,US
+2021-04-25,Foreclosure Auctions,Distress Signal,93,US
+2021-04-25,Home Insurance,Financial Friction,34,US
+2021-04-25,Mortgage Assumption,Market Access,7,US
+2021-05-02,Estate Sales,Involuntary Supply,62,US
+2021-05-02,Foreclosure Auctions,Distress Signal,86,US
+2021-05-02,Home Insurance,Financial Friction,32,US
+2021-05-02,Mortgage Assumption,Market Access,6,US
+2021-05-09,Estate Sales,Involuntary Supply,66,US
+2021-05-09,Foreclosure Auctions,Distress Signal,84,US
+2021-05-09,Home Insurance,Financial Friction,36,US
+2021-05-09,Mortgage Assumption,Market Access,7,US
+2021-05-16,Estate Sales,Involuntary Supply,61,US
+2021-05-16,Foreclosure Auctions,Distress Signal,83,US
+2021-05-16,Home Insurance,Financial Friction,33,US
+2021-05-16,Mortgage Assumption,Market Access,6,US
+2021-05-23,Estate Sales,Involuntary Supply,68,US
+2021-05-23,Foreclosure Auctions,Distress Signal,85,US
+2021-05-23,Home Insurance,Financial Friction,34,US
+2021-05-23,Mortgage Assumption,Market Access,5,US
+2021-05-30,Estate Sales,Involuntary Supply,68,US
+2021-05-30,Foreclosure Auctions,Distress Signal,77,US
+2021-05-30,Home Insurance,Financial Friction,34,US
+2021-05-30,Mortgage Assumption,Market Access,6,US
+2021-06-06,Estate Sales,Involuntary Supply,67,US
+2021-06-06,Foreclosure Auctions,Distress Signal,81,US
+2021-06-06,Home Insurance,Financial Friction,36,US
+2021-06-06,Mortgage Assumption,Market Access,6,US
+2021-06-13,Estate Sales,Involuntary Supply,72,US
+2021-06-13,Foreclosure Auctions,Distress Signal,82,US
+2021-06-13,Home Insurance,Financial Friction,35,US
+2021-06-13,Mortgage Assumption,Market Access,4,US
+2021-06-20,Estate Sales,Involuntary Supply,60,US
+2021-06-20,Foreclosure Auctions,Distress Signal,84,US
+2021-06-20,Home Insurance,Financial Friction,32,US
+2021-06-20,Mortgage Assumption,Market Access,5,US
+2021-06-27,Estate Sales,Involuntary Supply,69,US
+2021-06-27,Foreclosure Auctions,Distress Signal,96,US
+2021-06-27,Home Insurance,Financial Friction,28,US
+2021-06-27,Mortgage Assumption,Market Access,4,US
+2021-07-04,Estate Sales,Involuntary Supply,64,US
+2021-07-04,Foreclosure Auctions,Distress Signal,83,US
+2021-07-04,Home Insurance,Financial Friction,29,US
+2021-07-04,Mortgage Assumption,Market Access,0,US
+2021-07-11,Estate Sales,Involuntary Supply,71,US
+2021-07-11,Foreclosure Auctions,Distress Signal,80,US
+2021-07-11,Home Insurance,Financial Friction,32,US
+2021-07-11,Mortgage Assumption,Market Access,4,US
+2021-07-18,Estate Sales,Involuntary Supply,67,US
+2021-07-18,Foreclosure Auctions,Distress Signal,91,US
+2021-07-18,Home Insurance,Financial Friction,31,US
+2021-07-18,Mortgage Assumption,Market Access,4,US
+2021-07-25,Estate Sales,Involuntary Supply,62,US
+2021-07-25,Foreclosure Auctions,Distress Signal,88,US
+2021-07-25,Home Insurance,Financial Friction,28,US
+2021-07-25,Mortgage Assumption,Market Access,3,US
+2021-08-01,Estate Sales,Involuntary Supply,63,US
+2021-08-01,Foreclosure Auctions,Distress Signal,80,US
+2021-08-01,Home Insurance,Financial Friction,31,US
+2021-08-01,Mortgage Assumption,Market Access,4,US
+2021-08-08,Estate Sales,Involuntary Supply,69,US
+2021-08-08,Foreclosure Auctions,Distress Signal,77,US
+2021-08-08,Home Insurance,Financial Friction,33,US
+2021-08-08,Mortgage Assumption,Market Access,4,US
+2021-08-15,Estate Sales,Involuntary Supply,70,US
+2021-08-15,Foreclosure Auctions,Distress Signal,77,US
+2021-08-15,Home Insurance,Financial Friction,34,US
+2021-08-15,Mortgage Assumption,Market Access,5,US
+2021-08-22,Estate Sales,Involuntary Supply,51,US
+2021-08-22,Foreclosure Auctions,Distress Signal,78,US
+2021-08-22,Home Insurance,Financial Friction,36,US
+2021-08-22,Mortgage Assumption,Market Access,6,US
+2021-08-29,Estate Sales,Involuntary Supply,67,US
+2021-08-29,Foreclosure Auctions,Distress Signal,71,US
+2021-08-29,Home Insurance,Financial Friction,34,US
+2021-08-29,Mortgage Assumption,Market Access,0,US
+2021-09-05,Estate Sales,Involuntary Supply,59,US
+2021-09-05,Foreclosure Auctions,Distress Signal,71,US
+2021-09-05,Home Insurance,Financial Friction,39,US
+2021-09-05,Mortgage Assumption,Market Access,6,US
+2021-09-12,Estate Sales,Involuntary Supply,54,US
+2021-09-12,Foreclosure Auctions,Distress Signal,72,US
+2021-09-12,Home Insurance,Financial Friction,36,US
+2021-09-12,Mortgage Assumption,Market Access,5,US
+2021-09-19,Estate Sales,Involuntary Supply,50,US
+2021-09-19,Foreclosure Auctions,Distress Signal,75,US
+2021-09-19,Home Insurance,Financial Friction,36,US
+2021-09-19,Mortgage Assumption,Market Access,4,US
+2021-09-26,Estate Sales,Involuntary Supply,46,US
+2021-09-26,Foreclosure Auctions,Distress Signal,74,US
+2021-09-26,Home Insurance,Financial Friction,34,US
+2021-09-26,Mortgage Assumption,Market Access,4,US
+2021-10-03,Estate Sales,Involuntary Supply,60,US
+2021-10-03,Foreclosure Auctions,Distress Signal,74,US
+2021-10-03,Home Insurance,Financial Friction,30,US
+2021-10-03,Mortgage Assumption,Market Access,6,US
+2021-10-10,Estate Sales,Involuntary Supply,61,US
+2021-10-10,Foreclosure Auctions,Distress Signal,70,US
+2021-10-10,Home Insurance,Financial Friction,34,US
+2021-10-10,Mortgage Assumption,Market Access,4,US
+2021-10-17,Estate Sales,Involuntary Supply,59,US
+2021-10-17,Foreclosure Auctions,Distress Signal,68,US
+2021-10-17,Home Insurance,Financial Friction,31,US
+2021-10-17,Mortgage Assumption,Market Access,5,US
+2021-10-24,Estate Sales,Involuntary Supply,59,US
+2021-10-24,Foreclosure Auctions,Distress Signal,72,US
+2021-10-24,Home Insurance,Financial Friction,31,US
+2021-10-24,Mortgage Assumption,Market Access,6,US
+2021-10-31,Estate Sales,Involuntary Supply,64,US
+2021-10-31,Foreclosure Auctions,Distress Signal,65,US
+2021-10-31,Home Insurance,Financial Friction,33,US
+2021-10-31,Mortgage Assumption,Market Access,5,US
+2021-11-07,Estate Sales,Involuntary Supply,57,US
+2021-11-07,Foreclosure Auctions,Distress Signal,64,US
+2021-11-07,Home Insurance,Financial Friction,30,US
+2021-11-07,Mortgage Assumption,Market Access,6,US
+2021-11-14,Estate Sales,Involuntary Supply,38,US
+2021-11-14,Foreclosure Auctions,Distress Signal,53,US
+2021-11-14,Home Insurance,Financial Friction,28,US
+2021-11-14,Mortgage Assumption,Market Access,4,US
+2021-11-21,Estate Sales,Involuntary Supply,42,US
+2021-11-21,Foreclosure Auctions,Distress Signal,79,US
+2021-11-21,Home Insurance,Financial Friction,34,US
+2021-11-21,Mortgage Assumption,Market Access,5,US
+2021-11-28,Estate Sales,Involuntary Supply,41,US
+2021-11-28,Foreclosure Auctions,Distress Signal,64,US
+2021-11-28,Home Insurance,Financial Friction,30,US
+2021-11-28,Mortgage Assumption,Market Access,5,US
+2021-12-05,Estate Sales,Involuntary Supply,37,US
+2021-12-05,Foreclosure Auctions,Distress Signal,67,US
+2021-12-05,Home Insurance,Financial Friction,30,US
+2021-12-05,Mortgage Assumption,Market Access,4,US
+2021-12-12,Estate Sales,Involuntary Supply,24,US
+2021-12-12,Foreclosure Auctions,Distress Signal,52,US
+2021-12-12,Home Insurance,Financial Friction,30,US
+2021-12-12,Mortgage Assumption,Market Access,3,US
+2021-12-19,Estate Sales,Involuntary Supply,32,US
+2021-12-19,Foreclosure Auctions,Distress Signal,71,US
+2021-12-19,Home Insurance,Financial Friction,33,US
+2021-12-19,Mortgage Assumption,Market Access,7,US
+2021-12-26,Estate Sales,Involuntary Supply,42,US
+2021-12-26,Foreclosure Auctions,Distress Signal,81,US
+2021-12-26,Home Insurance,Financial Friction,41,US
+2021-12-26,Mortgage Assumption,Market Access,0,US
+2022-01-02,Estate Sales,Involuntary Supply,47,US
+2022-01-02,Foreclosure Auctions,Distress Signal,79,US
+2022-01-02,Home Insurance,Financial Friction,43,US
+2022-01-02,Mortgage Assumption,Market Access,5,US
+2022-01-09,Estate Sales,Involuntary Supply,51,US
+2022-01-09,Foreclosure Auctions,Distress Signal,79,US
+2022-01-09,Home Insurance,Financial Friction,39,US
+2022-01-09,Mortgage Assumption,Market Access,6,US
+2022-01-16,Estate Sales,Involuntary Supply,61,US
+2022-01-16,Foreclosure Auctions,Distress Signal,90,US
+2022-01-16,Home Insurance,Financial Friction,35,US
+2022-01-16,Mortgage Assumption,Market Access,6,US
+2022-01-23,Estate Sales,Involuntary Supply,56,US
+2022-01-23,Foreclosure Auctions,Distress Signal,86,US
+2022-01-23,Home Insurance,Financial Friction,36,US
+2022-01-23,Mortgage Assumption,Market Access,5,US
+2022-01-30,Estate Sales,Involuntary Supply,59,US
+2022-01-30,Foreclosure Auctions,Distress Signal,90,US
+2022-01-30,Home Insurance,Financial Friction,39,US
+2022-01-30,Mortgage Assumption,Market Access,8,US
+2022-02-06,Estate Sales,Involuntary Supply,59,US
+2022-02-06,Foreclosure Auctions,Distress Signal,93,US
+2022-02-06,Home Insurance,Financial Friction,35,US
+2022-02-06,Mortgage Assumption,Market Access,6,US
+2022-02-13,Estate Sales,Involuntary Supply,59,US
+2022-02-13,Foreclosure Auctions,Distress Signal,90,US
+2022-02-13,Home Insurance,Financial Friction,35,US
+2022-02-13,Mortgage Assumption,Market Access,5,US
+2022-02-20,Estate Sales,Involuntary Supply,49,US
+2022-02-20,Foreclosure Auctions,Distress Signal,87,US
+2022-02-20,Home Insurance,Financial Friction,37,US
+2022-02-20,Mortgage Assumption,Market Access,6,US
+2022-02-27,Estate Sales,Involuntary Supply,47,US
+2022-02-27,Foreclosure Auctions,Distress Signal,88,US
+2022-02-27,Home Insurance,Financial Friction,41,US
+2022-02-27,Mortgage Assumption,Market Access,5,US
+2022-03-06,Estate Sales,Involuntary Supply,51,US
+2022-03-06,Foreclosure Auctions,Distress Signal,93,US
+2022-03-06,Home Insurance,Financial Friction,39,US
+2022-03-06,Mortgage Assumption,Market Access,5,US
+2022-03-13,Estate Sales,Involuntary Supply,58,US
+2022-03-13,Foreclosure Auctions,Distress Signal,92,US
+2022-03-13,Home Insurance,Financial Friction,40,US
+2022-03-13,Mortgage Assumption,Market Access,8,US
+2022-03-20,Estate Sales,Involuntary Supply,52,US
+2022-03-20,Foreclosure Auctions,Distress Signal,85,US
+2022-03-20,Home Insurance,Financial Friction,38,US
+2022-03-20,Mortgage Assumption,Market Access,7,US
+2022-03-27,Estate Sales,Involuntary Supply,49,US
+2022-03-27,Foreclosure Auctions,Distress Signal,85,US
+2022-03-27,Home Insurance,Financial Friction,37,US
+2022-03-27,Mortgage Assumption,Market Access,5,US
+2022-04-03,Estate Sales,Involuntary Supply,50,US
+2022-04-03,Foreclosure Auctions,Distress Signal,76,US
+2022-04-03,Home Insurance,Financial Friction,35,US
+2022-04-03,Mortgage Assumption,Market Access,5,US
+2022-04-10,Estate Sales,Involuntary Supply,55,US
+2022-04-10,Foreclosure Auctions,Distress Signal,82,US
+2022-04-10,Home Insurance,Financial Friction,34,US
+2022-04-10,Mortgage Assumption,Market Access,7,US
+2022-04-17,Estate Sales,Involuntary Supply,48,US
+2022-04-17,Foreclosure Auctions,Distress Signal,80,US
+2022-04-17,Home Insurance,Financial Friction,35,US
+2022-04-17,Mortgage Assumption,Market Access,7,US
+2022-04-24,Estate Sales,Involuntary Supply,29,US
+2022-04-24,Foreclosure Auctions,Distress Signal,81,US
+2022-04-24,Home Insurance,Financial Friction,35,US
+2022-04-24,Mortgage Assumption,Market Access,7,US
+2022-05-01,Estate Sales,Involuntary Supply,30,US
+2022-05-01,Foreclosure Auctions,Distress Signal,71,US
+2022-05-01,Home Insurance,Financial Friction,35,US
+2022-05-01,Mortgage Assumption,Market Access,6,US
+2022-05-08,Estate Sales,Involuntary Supply,32,US
+2022-05-08,Foreclosure Auctions,Distress Signal,67,US
+2022-05-08,Home Insurance,Financial Friction,34,US
+2022-05-08,Mortgage Assumption,Market Access,8,US
+2022-05-15,Estate Sales,Involuntary Supply,33,US
+2022-05-15,Foreclosure Auctions,Distress Signal,62,US
+2022-05-15,Home Insurance,Financial Friction,35,US
+2022-05-15,Mortgage Assumption,Market Access,7,US
+2022-05-22,Estate Sales,Involuntary Supply,36,US
+2022-05-22,Foreclosure Auctions,Distress Signal,67,US
+2022-05-22,Home Insurance,Financial Friction,32,US
+2022-05-22,Mortgage Assumption,Market Access,6,US
+2022-05-29,Estate Sales,Involuntary Supply,59,US
+2022-05-29,Foreclosure Auctions,Distress Signal,72,US
+2022-05-29,Home Insurance,Financial Friction,33,US
+2022-05-29,Mortgage Assumption,Market Access,6,US
+2022-06-05,Estate Sales,Involuntary Supply,51,US
+2022-06-05,Foreclosure Auctions,Distress Signal,72,US
+2022-06-05,Home Insurance,Financial Friction,31,US
+2022-06-05,Mortgage Assumption,Market Access,10,US
+2022-06-12,Estate Sales,Involuntary Supply,56,US
+2022-06-12,Foreclosure Auctions,Distress Signal,71,US
+2022-06-12,Home Insurance,Financial Friction,33,US
+2022-06-12,Mortgage Assumption,Market Access,11,US
+2022-06-19,Estate Sales,Involuntary Supply,51,US
+2022-06-19,Foreclosure Auctions,Distress Signal,71,US
+2022-06-19,Home Insurance,Financial Friction,31,US
+2022-06-19,Mortgage Assumption,Market Access,9,US
+2022-06-26,Estate Sales,Involuntary Supply,55,US
+2022-06-26,Foreclosure Auctions,Distress Signal,72,US
+2022-06-26,Home Insurance,Financial Friction,31,US
+2022-06-26,Mortgage Assumption,Market Access,8,US
+2022-07-03,Estate Sales,Involuntary Supply,54,US
+2022-07-03,Foreclosure Auctions,Distress Signal,78,US
+2022-07-03,Home Insurance,Financial Friction,33,US
+2022-07-03,Mortgage Assumption,Market Access,11,US
+2022-07-10,Estate Sales,Involuntary Supply,58,US
+2022-07-10,Foreclosure Auctions,Distress Signal,73,US
+2022-07-10,Home Insurance,Financial Friction,34,US
+2022-07-10,Mortgage Assumption,Market Access,9,US
+2022-07-17,Estate Sales,Involuntary Supply,61,US
+2022-07-17,Foreclosure Auctions,Distress Signal,74,US
+2022-07-17,Home Insurance,Financial Friction,31,US
+2022-07-17,Mortgage Assumption,Market Access,13,US
+2022-07-24,Estate Sales,Involuntary Supply,65,US
+2022-07-24,Foreclosure Auctions,Distress Signal,75,US
+2022-07-24,Home Insurance,Financial Friction,34,US
+2022-07-24,Mortgage Assumption,Market Access,7,US
+2022-07-31,Estate Sales,Involuntary Supply,64,US
+2022-07-31,Foreclosure Auctions,Distress Signal,69,US
+2022-07-31,Home Insurance,Financial Friction,32,US
+2022-07-31,Mortgage Assumption,Market Access,8,US
+2022-08-07,Estate Sales,Involuntary Supply,71,US
+2022-08-07,Foreclosure Auctions,Distress Signal,70,US
+2022-08-07,Home Insurance,Financial Friction,32,US
+2022-08-07,Mortgage Assumption,Market Access,7,US
+2022-08-14,Estate Sales,Involuntary Supply,69,US
+2022-08-14,Foreclosure Auctions,Distress Signal,70,US
+2022-08-14,Home Insurance,Financial Friction,31,US
+2022-08-14,Mortgage Assumption,Market Access,8,US
+2022-08-21,Estate Sales,Involuntary Supply,63,US
+2022-08-21,Foreclosure Auctions,Distress Signal,70,US
+2022-08-21,Home Insurance,Financial Friction,30,US
+2022-08-21,Mortgage Assumption,Market Access,9,US
+2022-08-28,Estate Sales,Involuntary Supply,66,US
+2022-08-28,Foreclosure Auctions,Distress Signal,66,US
+2022-08-28,Home Insurance,Financial Friction,29,US
+2022-08-28,Mortgage Assumption,Market Access,8,US
+2022-09-04,Estate Sales,Involuntary Supply,61,US
+2022-09-04,Foreclosure Auctions,Distress Signal,66,US
+2022-09-04,Home Insurance,Financial Friction,28,US
+2022-09-04,Mortgage Assumption,Market Access,7,US
+2022-09-11,Estate Sales,Involuntary Supply,64,US
+2022-09-11,Foreclosure Auctions,Distress Signal,66,US
+2022-09-11,Home Insurance,Financial Friction,30,US
+2022-09-11,Mortgage Assumption,Market Access,8,US
+2022-09-18,Estate Sales,Involuntary Supply,57,US
+2022-09-18,Foreclosure Auctions,Distress Signal,62,US
+2022-09-18,Home Insurance,Financial Friction,31,US
+2022-09-18,Mortgage Assumption,Market Access,13,US
+2022-09-25,Estate Sales,Involuntary Supply,60,US
+2022-09-25,Foreclosure Auctions,Distress Signal,64,US
+2022-09-25,Home Insurance,Financial Friction,31,US
+2022-09-25,Mortgage Assumption,Market Access,21,US
+2022-10-02,Estate Sales,Involuntary Supply,61,US
+2022-10-02,Foreclosure Auctions,Distress Signal,64,US
+2022-10-02,Home Insurance,Financial Friction,29,US
+2022-10-02,Mortgage Assumption,Market Access,25,US
+2022-10-09,Estate Sales,Involuntary Supply,58,US
+2022-10-09,Foreclosure Auctions,Distress Signal,60,US
+2022-10-09,Home Insurance,Financial Friction,29,US
+2022-10-09,Mortgage Assumption,Market Access,21,US
+2022-10-16,Estate Sales,Involuntary Supply,60,US
+2022-10-16,Foreclosure Auctions,Distress Signal,71,US
+2022-10-16,Home Insurance,Financial Friction,27,US
+2022-10-16,Mortgage Assumption,Market Access,25,US
+2022-10-23,Estate Sales,Involuntary Supply,61,US
+2022-10-23,Foreclosure Auctions,Distress Signal,66,US
+2022-10-23,Home Insurance,Financial Friction,28,US
+2022-10-23,Mortgage Assumption,Market Access,21,US
+2022-10-30,Estate Sales,Involuntary Supply,58,US
+2022-10-30,Foreclosure Auctions,Distress Signal,60,US
+2022-10-30,Home Insurance,Financial Friction,26,US
+2022-10-30,Mortgage Assumption,Market Access,18,US
+2022-11-06,Estate Sales,Involuntary Supply,46,US
+2022-11-06,Foreclosure Auctions,Distress Signal,58,US
+2022-11-06,Home Insurance,Financial Friction,26,US
+2022-11-06,Mortgage Assumption,Market Access,18,US
+2022-11-13,Estate Sales,Involuntary Supply,29,US
+2022-11-13,Foreclosure Auctions,Distress Signal,47,US
+2022-11-13,Home Insurance,Financial Friction,20,US
+2022-11-13,Mortgage Assumption,Market Access,12,US
+2022-11-20,Estate Sales,Involuntary Supply,36,US
+2022-11-20,Foreclosure Auctions,Distress Signal,62,US
+2022-11-20,Home Insurance,Financial Friction,26,US
+2022-11-20,Mortgage Assumption,Market Access,15,US
+2022-11-27,Estate Sales,Involuntary Supply,37,US
+2022-11-27,Foreclosure Auctions,Distress Signal,58,US
+2022-11-27,Home Insurance,Financial Friction,26,US
+2022-11-27,Mortgage Assumption,Market Access,16,US
+2022-12-04,Estate Sales,Involuntary Supply,32,US
+2022-12-04,Foreclosure Auctions,Distress Signal,52,US
+2022-12-04,Home Insurance,Financial Friction,27,US
+2022-12-04,Mortgage Assumption,Market Access,17,US
+2022-12-11,Estate Sales,Involuntary Supply,23,US
+2022-12-11,Foreclosure Auctions,Distress Signal,52,US
+2022-12-11,Home Insurance,Financial Friction,23,US
+2022-12-11,Mortgage Assumption,Market Access,11,US
+2022-12-18,Estate Sales,Involuntary Supply,31,US
+2022-12-18,Foreclosure Auctions,Distress Signal,63,US
+2022-12-18,Home Insurance,Financial Friction,28,US
+2022-12-18,Mortgage Assumption,Market Access,14,US
+2022-12-25,Estate Sales,Involuntary Supply,40,US
+2022-12-25,Foreclosure Auctions,Distress Signal,75,US
+2022-12-25,Home Insurance,Financial Friction,29,US
+2022-12-25,Mortgage Assumption,Market Access,17,US
+2023-01-01,Estate Sales,Involuntary Supply,49,US
+2023-01-01,Foreclosure Auctions,Distress Signal,72,US
+2023-01-01,Home Insurance,Financial Friction,32,US
+2023-01-01,Mortgage Assumption,Market Access,13,US
+2023-01-08,Estate Sales,Involuntary Supply,52,US
+2023-01-08,Foreclosure Auctions,Distress Signal,75,US
+2023-01-08,Home Insurance,Financial Friction,30,US
+2023-01-08,Mortgage Assumption,Market Access,15,US
+2023-01-15,Estate Sales,Involuntary Supply,54,US
+2023-01-15,Foreclosure Auctions,Distress Signal,75,US
+2023-01-15,Home Insurance,Financial Friction,28,US
+2023-01-15,Mortgage Assumption,Market Access,14,US
+2023-01-22,Estate Sales,Involuntary Supply,52,US
+2023-01-22,Foreclosure Auctions,Distress Signal,74,US
+2023-01-22,Home Insurance,Financial Friction,32,US
+2023-01-22,Mortgage Assumption,Market Access,14,US
+2023-01-29,Estate Sales,Involuntary Supply,54,US
+2023-01-29,Foreclosure Auctions,Distress Signal,73,US
+2023-01-29,Home Insurance,Financial Friction,31,US
+2023-01-29,Mortgage Assumption,Market Access,13,US
+2023-02-05,Estate Sales,Involuntary Supply,56,US
+2023-02-05,Foreclosure Auctions,Distress Signal,74,US
+2023-02-05,Home Insurance,Financial Friction,32,US
+2023-02-05,Mortgage Assumption,Market Access,17,US
+2023-02-12,Estate Sales,Involuntary Supply,59,US
+2023-02-12,Foreclosure Auctions,Distress Signal,80,US
+2023-02-12,Home Insurance,Financial Friction,30,US
+2023-02-12,Mortgage Assumption,Market Access,19,US
+2023-02-19,Estate Sales,Involuntary Supply,57,US
+2023-02-19,Foreclosure Auctions,Distress Signal,76,US
+2023-02-19,Home Insurance,Financial Friction,33,US
+2023-02-19,Mortgage Assumption,Market Access,15,US
+2023-02-26,Estate Sales,Involuntary Supply,68,US
+2023-02-26,Foreclosure Auctions,Distress Signal,78,US
+2023-02-26,Home Insurance,Financial Friction,32,US
+2023-02-26,Mortgage Assumption,Market Access,16,US
+2023-03-05,Estate Sales,Involuntary Supply,73,US
+2023-03-05,Foreclosure Auctions,Distress Signal,78,US
+2023-03-05,Home Insurance,Financial Friction,31,US
+2023-03-05,Mortgage Assumption,Market Access,19,US
+2023-03-12,Estate Sales,Involuntary Supply,77,US
+2023-03-12,Foreclosure Auctions,Distress Signal,76,US
+2023-03-12,Home Insurance,Financial Friction,33,US
+2023-03-12,Mortgage Assumption,Market Access,18,US
+2023-03-19,Estate Sales,Involuntary Supply,85,US
+2023-03-19,Foreclosure Auctions,Distress Signal,76,US
+2023-03-19,Home Insurance,Financial Friction,32,US
+2023-03-19,Mortgage Assumption,Market Access,30,US
+2023-03-26,Estate Sales,Involuntary Supply,66,US
+2023-03-26,Foreclosure Auctions,Distress Signal,75,US
+2023-03-26,Home Insurance,Financial Friction,33,US
+2023-03-26,Mortgage Assumption,Market Access,21,US
+2023-04-02,Estate Sales,Involuntary Supply,69,US
+2023-04-02,Foreclosure Auctions,Distress Signal,77,US
+2023-04-02,Home Insurance,Financial Friction,33,US
+2023-04-02,Mortgage Assumption,Market Access,19,US
+2023-04-09,Estate Sales,Involuntary Supply,81,US
+2023-04-09,Foreclosure Auctions,Distress Signal,81,US
+2023-04-09,Home Insurance,Financial Friction,34,US
+2023-04-09,Mortgage Assumption,Market Access,24,US
+2023-04-16,Estate Sales,Involuntary Supply,78,US
+2023-04-16,Foreclosure Auctions,Distress Signal,76,US
+2023-04-16,Home Insurance,Financial Friction,32,US
+2023-04-16,Mortgage Assumption,Market Access,18,US
+2023-04-23,Estate Sales,Involuntary Supply,70,US
+2023-04-23,Foreclosure Auctions,Distress Signal,75,US
+2023-04-23,Home Insurance,Financial Friction,32,US
+2023-04-23,Mortgage Assumption,Market Access,23,US
+2023-04-30,Estate Sales,Involuntary Supply,70,US
+2023-04-30,Foreclosure Auctions,Distress Signal,70,US
+2023-04-30,Home Insurance,Financial Friction,32,US
+2023-04-30,Mortgage Assumption,Market Access,21,US
+2023-05-07,Estate Sales,Involuntary Supply,76,US
+2023-05-07,Foreclosure Auctions,Distress Signal,74,US
+2023-05-07,Home Insurance,Financial Friction,35,US
+2023-05-07,Mortgage Assumption,Market Access,22,US
+2023-05-14,Estate Sales,Involuntary Supply,71,US
+2023-05-14,Foreclosure Auctions,Distress Signal,72,US
+2023-05-14,Home Insurance,Financial Friction,31,US
+2023-05-14,Mortgage Assumption,Market Access,19,US
+2023-05-21,Estate Sales,Involuntary Supply,81,US
+2023-05-21,Foreclosure Auctions,Distress Signal,72,US
+2023-05-21,Home Insurance,Financial Friction,34,US
+2023-05-21,Mortgage Assumption,Market Access,20,US
+2023-05-28,Estate Sales,Involuntary Supply,80,US
+2023-05-28,Foreclosure Auctions,Distress Signal,77,US
+2023-05-28,Home Insurance,Financial Friction,34,US
+2023-05-28,Mortgage Assumption,Market Access,19,US
+2023-06-04,Estate Sales,Involuntary Supply,81,US
+2023-06-04,Foreclosure Auctions,Distress Signal,75,US
+2023-06-04,Home Insurance,Financial Friction,31,US
+2023-06-04,Mortgage Assumption,Market Access,30,US
+2023-06-11,Estate Sales,Involuntary Supply,82,US
+2023-06-11,Foreclosure Auctions,Distress Signal,74,US
+2023-06-11,Home Insurance,Financial Friction,34,US
+2023-06-11,Mortgage Assumption,Market Access,24,US
+2023-06-18,Estate Sales,Involuntary Supply,78,US
+2023-06-18,Foreclosure Auctions,Distress Signal,80,US
+2023-06-18,Home Insurance,Financial Friction,35,US
+2023-06-18,Mortgage Assumption,Market Access,23,US
+2023-06-25,Estate Sales,Involuntary Supply,79,US
+2023-06-25,Foreclosure Auctions,Distress Signal,80,US
+2023-06-25,Home Insurance,Financial Friction,34,US
+2023-06-25,Mortgage Assumption,Market Access,22,US
+2023-07-02,Estate Sales,Involuntary Supply,77,US
+2023-07-02,Foreclosure Auctions,Distress Signal,79,US
+2023-07-02,Home Insurance,Financial Friction,35,US
+2023-07-02,Mortgage Assumption,Market Access,30,US
+2023-07-09,Estate Sales,Involuntary Supply,76,US
+2023-07-09,Foreclosure Auctions,Distress Signal,76,US
+2023-07-09,Home Insurance,Financial Friction,35,US
+2023-07-09,Mortgage Assumption,Market Access,26,US
+2023-07-16,Estate Sales,Involuntary Supply,77,US
+2023-07-16,Foreclosure Auctions,Distress Signal,77,US
+2023-07-16,Home Insurance,Financial Friction,35,US
+2023-07-16,Mortgage Assumption,Market Access,30,US
+2023-07-23,Estate Sales,Involuntary Supply,73,US
+2023-07-23,Foreclosure Auctions,Distress Signal,74,US
+2023-07-23,Home Insurance,Financial Friction,36,US
+2023-07-23,Mortgage Assumption,Market Access,26,US
+2023-07-30,Estate Sales,Involuntary Supply,73,US
+2023-07-30,Foreclosure Auctions,Distress Signal,77,US
+2023-07-30,Home Insurance,Financial Friction,35,US
+2023-07-30,Mortgage Assumption,Market Access,29,US
+2023-08-06,Estate Sales,Involuntary Supply,73,US
+2023-08-06,Foreclosure Auctions,Distress Signal,72,US
+2023-08-06,Home Insurance,Financial Friction,35,US
+2023-08-06,Mortgage Assumption,Market Access,31,US
+2023-08-13,Estate Sales,Involuntary Supply,74,US
+2023-08-13,Foreclosure Auctions,Distress Signal,70,US
+2023-08-13,Home Insurance,Financial Friction,35,US
+2023-08-13,Mortgage Assumption,Market Access,31,US
+2023-08-20,Estate Sales,Involuntary Supply,68,US
+2023-08-20,Foreclosure Auctions,Distress Signal,68,US
+2023-08-20,Home Insurance,Financial Friction,35,US
+2023-08-20,Mortgage Assumption,Market Access,29,US
+2023-08-27,Estate Sales,Involuntary Supply,68,US
+2023-08-27,Foreclosure Auctions,Distress Signal,72,US
+2023-08-27,Home Insurance,Financial Friction,34,US
+2023-08-27,Mortgage Assumption,Market Access,25,US
+2023-09-03,Estate Sales,Involuntary Supply,66,US
+2023-09-03,Foreclosure Auctions,Distress Signal,67,US
+2023-09-03,Home Insurance,Financial Friction,35,US
+2023-09-03,Mortgage Assumption,Market Access,53,US
+2023-09-10,Estate Sales,Involuntary Supply,69,US
+2023-09-10,Foreclosure Auctions,Distress Signal,69,US
+2023-09-10,Home Insurance,Financial Friction,31,US
+2023-09-10,Mortgage Assumption,Market Access,49,US
+2023-09-17,Estate Sales,Involuntary Supply,69,US
+2023-09-17,Foreclosure Auctions,Distress Signal,68,US
+2023-09-17,Home Insurance,Financial Friction,33,US
+2023-09-17,Mortgage Assumption,Market Access,49,US
+2023-09-24,Estate Sales,Involuntary Supply,64,US
+2023-09-24,Foreclosure Auctions,Distress Signal,70,US
+2023-09-24,Home Insurance,Financial Friction,31,US
+2023-09-24,Mortgage Assumption,Market Access,33,US
+2023-10-01,Estate Sales,Involuntary Supply,65,US
+2023-10-01,Foreclosure Auctions,Distress Signal,64,US
+2023-10-01,Home Insurance,Financial Friction,31,US
+2023-10-01,Mortgage Assumption,Market Access,40,US
+2023-10-08,Estate Sales,Involuntary Supply,68,US
+2023-10-08,Foreclosure Auctions,Distress Signal,65,US
+2023-10-08,Home Insurance,Financial Friction,32,US
+2023-10-08,Mortgage Assumption,Market Access,38,US
+2023-10-15,Estate Sales,Involuntary Supply,61,US
+2023-10-15,Foreclosure Auctions,Distress Signal,65,US
+2023-10-15,Home Insurance,Financial Friction,31,US
+2023-10-15,Mortgage Assumption,Market Access,41,US
+2023-10-22,Estate Sales,Involuntary Supply,66,US
+2023-10-22,Foreclosure Auctions,Distress Signal,65,US
+2023-10-22,Home Insurance,Financial Friction,32,US
+2023-10-22,Mortgage Assumption,Market Access,39,US
+2023-10-29,Estate Sales,Involuntary Supply,70,US
+2023-10-29,Foreclosure Auctions,Distress Signal,65,US
+2023-10-29,Home Insurance,Financial Friction,31,US
+2023-10-29,Mortgage Assumption,Market Access,33,US
+2023-11-05,Estate Sales,Involuntary Supply,63,US
+2023-11-05,Foreclosure Auctions,Distress Signal,65,US
+2023-11-05,Home Insurance,Financial Friction,30,US
+2023-11-05,Mortgage Assumption,Market Access,25,US
+2023-11-12,Estate Sales,Involuntary Supply,43,US
+2023-11-12,Foreclosure Auctions,Distress Signal,48,US
+2023-11-12,Home Insurance,Financial Friction,22,US
+2023-11-12,Mortgage Assumption,Market Access,22,US
+2023-11-19,Estate Sales,Involuntary Supply,56,US
+2023-11-19,Foreclosure Auctions,Distress Signal,64,US
+2023-11-19,Home Insurance,Financial Friction,31,US
+2023-11-19,Mortgage Assumption,Market Access,25,US
+2023-11-26,Estate Sales,Involuntary Supply,57,US
+2023-11-26,Foreclosure Auctions,Distress Signal,69,US
+2023-11-26,Home Insurance,Financial Friction,32,US
+2023-11-26,Mortgage Assumption,Market Access,27,US
+2023-12-03,Estate Sales,Involuntary Supply,49,US
+2023-12-03,Foreclosure Auctions,Distress Signal,60,US
+2023-12-03,Home Insurance,Financial Friction,30,US
+2023-12-03,Mortgage Assumption,Market Access,28,US
+2023-12-10,Estate Sales,Involuntary Supply,34,US
+2023-12-10,Foreclosure Auctions,Distress Signal,56,US
+2023-12-10,Home Insurance,Financial Friction,28,US
+2023-12-10,Mortgage Assumption,Market Access,24,US
+2023-12-17,Estate Sales,Involuntary Supply,40,US
+2023-12-17,Foreclosure Auctions,Distress Signal,57,US
+2023-12-17,Home Insurance,Financial Friction,28,US
+2023-12-17,Mortgage Assumption,Market Access,19,US
+2023-12-24,Estate Sales,Involuntary Supply,51,US
+2023-12-24,Foreclosure Auctions,Distress Signal,70,US
+2023-12-24,Home Insurance,Financial Friction,32,US
+2023-12-24,Mortgage Assumption,Market Access,51,US
+2023-12-31,Estate Sales,Involuntary Supply,53,US
+2023-12-31,Foreclosure Auctions,Distress Signal,71,US
+2023-12-31,Home Insurance,Financial Friction,38,US
+2023-12-31,Mortgage Assumption,Market Access,29,US
+2024-01-07,Estate Sales,Involuntary Supply,56,US
+2024-01-07,Foreclosure Auctions,Distress Signal,67,US
+2024-01-07,Home Insurance,Financial Friction,34,US
+2024-01-07,Mortgage Assumption,Market Access,28,US
+2024-01-14,Estate Sales,Involuntary Supply,57,US
+2024-01-14,Foreclosure Auctions,Distress Signal,69,US
+2024-01-14,Home Insurance,Financial Friction,37,US
+2024-01-14,Mortgage Assumption,Market Access,27,US
+2024-01-21,Estate Sales,Involuntary Supply,57,US
+2024-01-21,Foreclosure Auctions,Distress Signal,71,US
+2024-01-21,Home Insurance,Financial Friction,37,US
+2024-01-21,Mortgage Assumption,Market Access,34,US
+2024-01-28,Estate Sales,Involuntary Supply,56,US
+2024-01-28,Foreclosure Auctions,Distress Signal,74,US
+2024-01-28,Home Insurance,Financial Friction,37,US
+2024-01-28,Mortgage Assumption,Market Access,37,US
+2024-02-04,Estate Sales,Involuntary Supply,56,US
+2024-02-04,Foreclosure Auctions,Distress Signal,66,US
+2024-02-04,Home Insurance,Financial Friction,32,US
+2024-02-04,Mortgage Assumption,Market Access,35,US
+2024-02-11,Estate Sales,Involuntary Supply,68,US
+2024-02-11,Foreclosure Auctions,Distress Signal,73,US
+2024-02-11,Home Insurance,Financial Friction,39,US
+2024-02-11,Mortgage Assumption,Market Access,51,US
+2024-02-18,Estate Sales,Involuntary Supply,62,US
+2024-02-18,Foreclosure Auctions,Distress Signal,68,US
+2024-02-18,Home Insurance,Financial Friction,36,US
+2024-02-18,Mortgage Assumption,Market Access,42,US
+2024-02-25,Estate Sales,Involuntary Supply,61,US
+2024-02-25,Foreclosure Auctions,Distress Signal,69,US
+2024-02-25,Home Insurance,Financial Friction,36,US
+2024-02-25,Mortgage Assumption,Market Access,52,US
+2024-03-03,Estate Sales,Involuntary Supply,61,US
+2024-03-03,Foreclosure Auctions,Distress Signal,72,US
+2024-03-03,Home Insurance,Financial Friction,38,US
+2024-03-03,Mortgage Assumption,Market Access,41,US
+2024-03-10,Estate Sales,Involuntary Supply,65,US
+2024-03-10,Foreclosure Auctions,Distress Signal,71,US
+2024-03-10,Home Insurance,Financial Friction,38,US
+2024-03-10,Mortgage Assumption,Market Access,51,US
+2024-03-17,Estate Sales,Involuntary Supply,56,US
+2024-03-17,Foreclosure Auctions,Distress Signal,63,US
+2024-03-17,Home Insurance,Financial Friction,39,US
+2024-03-17,Mortgage Assumption,Market Access,40,US
+2024-03-24,Estate Sales,Involuntary Supply,57,US
+2024-03-24,Foreclosure Auctions,Distress Signal,67,US
+2024-03-24,Home Insurance,Financial Friction,37,US
+2024-03-24,Mortgage Assumption,Market Access,47,US
+2024-03-31,Estate Sales,Involuntary Supply,62,US
+2024-03-31,Foreclosure Auctions,Distress Signal,63,US
+2024-03-31,Home Insurance,Financial Friction,38,US
+2024-03-31,Mortgage Assumption,Market Access,68,US
+2024-04-07,Estate Sales,Involuntary Supply,63,US
+2024-04-07,Foreclosure Auctions,Distress Signal,70,US
+2024-04-07,Home Insurance,Financial Friction,40,US
+2024-04-07,Mortgage Assumption,Market Access,73,US
+2024-04-14,Estate Sales,Involuntary Supply,65,US
+2024-04-14,Foreclosure Auctions,Distress Signal,69,US
+2024-04-14,Home Insurance,Financial Friction,39,US
+2024-04-14,Mortgage Assumption,Market Access,75,US
+2024-04-21,Estate Sales,Involuntary Supply,71,US
+2024-04-21,Foreclosure Auctions,Distress Signal,69,US
+2024-04-21,Home Insurance,Financial Friction,39,US
+2024-04-21,Mortgage Assumption,Market Access,74,US
+2024-04-28,Estate Sales,Involuntary Supply,100,US
+2024-04-28,Foreclosure Auctions,Distress Signal,69,US
+2024-04-28,Home Insurance,Financial Friction,40,US
+2024-04-28,Mortgage Assumption,Market Access,100,US
+2024-05-05,Estate Sales,Involuntary Supply,62,US
+2024-05-05,Foreclosure Auctions,Distress Signal,63,US
+2024-05-05,Home Insurance,Financial Friction,38,US
+2024-05-05,Mortgage Assumption,Market Access,97,US
+2024-05-12,Estate Sales,Involuntary Supply,62,US
+2024-05-12,Foreclosure Auctions,Distress Signal,88,US
+2024-05-12,Home Insurance,Financial Friction,40,US
+2024-05-12,Mortgage Assumption,Market Access,75,US
+2024-05-19,Estate Sales,Involuntary Supply,64,US
+2024-05-19,Foreclosure Auctions,Distress Signal,61,US
+2024-05-19,Home Insurance,Financial Friction,40,US
+2024-05-19,Mortgage Assumption,Market Access,84,US
+2024-05-26,Estate Sales,Involuntary Supply,61,US
+2024-05-26,Foreclosure Auctions,Distress Signal,66,US
+2024-05-26,Home Insurance,Financial Friction,40,US
+2024-05-26,Mortgage Assumption,Market Access,84,US
+2024-06-02,Estate Sales,Involuntary Supply,59,US
+2024-06-02,Foreclosure Auctions,Distress Signal,54,US
+2024-06-02,Home Insurance,Financial Friction,42,US
+2024-06-02,Mortgage Assumption,Market Access,88,US
+2024-06-09,Estate Sales,Involuntary Supply,64,US
+2024-06-09,Foreclosure Auctions,Distress Signal,53,US
+2024-06-09,Home Insurance,Financial Friction,44,US
+2024-06-09,Mortgage Assumption,Market Access,80,US
+2024-06-16,Estate Sales,Involuntary Supply,63,US
+2024-06-16,Foreclosure Auctions,Distress Signal,53,US
+2024-06-16,Home Insurance,Financial Friction,39,US
+2024-06-16,Mortgage Assumption,Market Access,68,US
+2024-06-23,Estate Sales,Involuntary Supply,55,US
+2024-06-23,Foreclosure Auctions,Distress Signal,58,US
+2024-06-23,Home Insurance,Financial Friction,37,US
+2024-06-23,Mortgage Assumption,Market Access,73,US
+2024-06-30,Estate Sales,Involuntary Supply,65,US
+2024-06-30,Foreclosure Auctions,Distress Signal,65,US
+2024-06-30,Home Insurance,Financial Friction,42,US
+2024-06-30,Mortgage Assumption,Market Access,77,US
+2024-07-07,Estate Sales,Involuntary Supply,64,US
+2024-07-07,Foreclosure Auctions,Distress Signal,60,US
+2024-07-07,Home Insurance,Financial Friction,38,US
+2024-07-07,Mortgage Assumption,Market Access,64,US
+2024-07-14,Estate Sales,Involuntary Supply,64,US
+2024-07-14,Foreclosure Auctions,Distress Signal,63,US
+2024-07-14,Home Insurance,Financial Friction,40,US
+2024-07-14,Mortgage Assumption,Market Access,64,US
+2024-07-21,Estate Sales,Involuntary Supply,62,US
+2024-07-21,Foreclosure Auctions,Distress Signal,66,US
+2024-07-21,Home Insurance,Financial Friction,40,US
+2024-07-21,Mortgage Assumption,Market Access,74,US
+2024-07-28,Estate Sales,Involuntary Supply,61,US
+2024-07-28,Foreclosure Auctions,Distress Signal,65,US
+2024-07-28,Home Insurance,Financial Friction,38,US
+2024-07-28,Mortgage Assumption,Market Access,58,US
+2024-08-04,Estate Sales,Involuntary Supply,62,US
+2024-08-04,Foreclosure Auctions,Distress Signal,66,US
+2024-08-04,Home Insurance,Financial Friction,41,US
+2024-08-04,Mortgage Assumption,Market Access,63,US
+2024-08-11,Estate Sales,Involuntary Supply,64,US
+2024-08-11,Foreclosure Auctions,Distress Signal,64,US
+2024-08-11,Home Insurance,Financial Friction,38,US
+2024-08-11,Mortgage Assumption,Market Access,58,US
+2024-08-18,Estate Sales,Involuntary Supply,59,US
+2024-08-18,Foreclosure Auctions,Distress Signal,56,US
+2024-08-18,Home Insurance,Financial Friction,37,US
+2024-08-18,Mortgage Assumption,Market Access,48,US
+2024-08-25,Estate Sales,Involuntary Supply,59,US
+2024-08-25,Foreclosure Auctions,Distress Signal,59,US
+2024-08-25,Home Insurance,Financial Friction,36,US
+2024-08-25,Mortgage Assumption,Market Access,47,US
+2024-09-01,Estate Sales,Involuntary Supply,57,US
+2024-09-01,Foreclosure Auctions,Distress Signal,60,US
+2024-09-01,Home Insurance,Financial Friction,36,US
+2024-09-01,Mortgage Assumption,Market Access,46,US
+2024-09-08,Estate Sales,Involuntary Supply,57,US
+2024-09-08,Foreclosure Auctions,Distress Signal,58,US
+2024-09-08,Home Insurance,Financial Friction,37,US
+2024-09-08,Mortgage Assumption,Market Access,46,US
+2024-09-15,Estate Sales,Involuntary Supply,55,US
+2024-09-15,Foreclosure Auctions,Distress Signal,52,US
+2024-09-15,Home Insurance,Financial Friction,39,US
+2024-09-15,Mortgage Assumption,Market Access,51,US
+2024-09-22,Estate Sales,Involuntary Supply,53,US
+2024-09-22,Foreclosure Auctions,Distress Signal,57,US
+2024-09-22,Home Insurance,Financial Friction,37,US
+2024-09-22,Mortgage Assumption,Market Access,47,US
+2024-09-29,Estate Sales,Involuntary Supply,51,US
+2024-09-29,Foreclosure Auctions,Distress Signal,51,US
+2024-09-29,Home Insurance,Financial Friction,42,US
+2024-09-29,Mortgage Assumption,Market Access,39,US
+2024-10-06,Estate Sales,Involuntary Supply,58,US
+2024-10-06,Foreclosure Auctions,Distress Signal,53,US
+2024-10-06,Home Insurance,Financial Friction,35,US
+2024-10-06,Mortgage Assumption,Market Access,96,US
+2024-10-13,Estate Sales,Involuntary Supply,55,US
+2024-10-13,Foreclosure Auctions,Distress Signal,58,US
+2024-10-13,Home Insurance,Financial Friction,37,US
+2024-10-13,Mortgage Assumption,Market Access,53,US
+2024-10-20,Estate Sales,Involuntary Supply,55,US
+2024-10-20,Foreclosure Auctions,Distress Signal,54,US
+2024-10-20,Home Insurance,Financial Friction,33,US
+2024-10-20,Mortgage Assumption,Market Access,39,US
+2024-10-27,Estate Sales,Involuntary Supply,53,US
+2024-10-27,Foreclosure Auctions,Distress Signal,54,US
+2024-10-27,Home Insurance,Financial Friction,32,US
+2024-10-27,Mortgage Assumption,Market Access,44,US
+2024-11-03,Estate Sales,Involuntary Supply,58,US
+2024-11-03,Foreclosure Auctions,Distress Signal,51,US
+2024-11-03,Home Insurance,Financial Friction,34,US
+2024-11-03,Mortgage Assumption,Market Access,41,US
+2024-11-10,Estate Sales,Involuntary Supply,52,US
+2024-11-10,Foreclosure Auctions,Distress Signal,56,US
+2024-11-10,Home Insurance,Financial Friction,34,US
+2024-11-10,Mortgage Assumption,Market Access,43,US
+2024-11-17,Estate Sales,Involuntary Supply,34,US
+2024-11-17,Foreclosure Auctions,Distress Signal,45,US
+2024-11-17,Home Insurance,Financial Friction,28,US
+2024-11-17,Mortgage Assumption,Market Access,36,US
+2024-11-24,Estate Sales,Involuntary Supply,42,US
+2024-11-24,Foreclosure Auctions,Distress Signal,52,US
+2024-11-24,Home Insurance,Financial Friction,35,US
+2024-11-24,Mortgage Assumption,Market Access,37,US
+2024-12-01,Estate Sales,Involuntary Supply,41,US
+2024-12-01,Foreclosure Auctions,Distress Signal,50,US
+2024-12-01,Home Insurance,Financial Friction,34,US
+2024-12-01,Mortgage Assumption,Market Access,31,US
+2024-12-08,Estate Sales,Involuntary Supply,37,US
+2024-12-08,Foreclosure Auctions,Distress Signal,48,US
+2024-12-08,Home Insurance,Financial Friction,33,US
+2024-12-08,Mortgage Assumption,Market Access,37,US
+2024-12-15,Estate Sales,Involuntary Supply,36,US
+2024-12-15,Foreclosure Auctions,Distress Signal,46,US
+2024-12-15,Home Insurance,Financial Friction,25,US
+2024-12-15,Mortgage Assumption,Market Access,34,US
+2024-12-22,Estate Sales,Involuntary Supply,43,US
+2024-12-22,Foreclosure Auctions,Distress Signal,67,US
+2024-12-22,Home Insurance,Financial Friction,35,US
+2024-12-22,Mortgage Assumption,Market Access,50,US
+2024-12-29,Estate Sales,Involuntary Supply,45,US
+2024-12-29,Foreclosure Auctions,Distress Signal,68,US
+2024-12-29,Home Insurance,Financial Friction,51,US
+2024-12-29,Mortgage Assumption,Market Access,52,US
+2025-01-05,Estate Sales,Involuntary Supply,53,US
+2025-01-05,Foreclosure Auctions,Distress Signal,70,US
+2025-01-05,Home Insurance,Financial Friction,70,US
+2025-01-05,Mortgage Assumption,Market Access,56,US
+2025-01-12,Estate Sales,Involuntary Supply,55,US
+2025-01-12,Foreclosure Auctions,Distress Signal,63,US
+2025-01-12,Home Insurance,Financial Friction,52,US
+2025-01-12,Mortgage Assumption,Market Access,56,US
+2025-01-19,Estate Sales,Involuntary Supply,54,US
+2025-01-19,Foreclosure Auctions,Distress Signal,64,US
+2025-01-19,Home Insurance,Financial Friction,38,US
+2025-01-19,Mortgage Assumption,Market Access,57,US
+2025-01-26,Estate Sales,Involuntary Supply,56,US
+2025-01-26,Foreclosure Auctions,Distress Signal,74,US
+2025-01-26,Home Insurance,Financial Friction,39,US
+2025-01-26,Mortgage Assumption,Market Access,55,US
+2025-02-02,Estate Sales,Involuntary Supply,52,US
+2025-02-02,Foreclosure Auctions,Distress Signal,66,US
+2025-02-02,Home Insurance,Financial Friction,40,US
+2025-02-02,Mortgage Assumption,Market Access,55,US
+2025-02-09,Estate Sales,Involuntary Supply,59,US
+2025-02-09,Foreclosure Auctions,Distress Signal,69,US
+2025-02-09,Home Insurance,Financial Friction,40,US
+2025-02-09,Mortgage Assumption,Market Access,58,US
+2025-02-16,Estate Sales,Involuntary Supply,61,US
+2025-02-16,Foreclosure Auctions,Distress Signal,65,US
+2025-02-16,Home Insurance,Financial Friction,38,US
+2025-02-16,Mortgage Assumption,Market Access,50,US
+2025-02-23,Estate Sales,Involuntary Supply,64,US
+2025-02-23,Foreclosure Auctions,Distress Signal,70,US
+2025-02-23,Home Insurance,Financial Friction,42,US
+2025-02-23,Mortgage Assumption,Market Access,51,US
+2025-03-02,Estate Sales,Involuntary Supply,64,US
+2025-03-02,Foreclosure Auctions,Distress Signal,68,US
+2025-03-02,Home Insurance,Financial Friction,41,US
+2025-03-02,Mortgage Assumption,Market Access,60,US
+2025-03-09,Estate Sales,Involuntary Supply,65,US
+2025-03-09,Foreclosure Auctions,Distress Signal,70,US
+2025-03-09,Home Insurance,Financial Friction,42,US
+2025-03-09,Mortgage Assumption,Market Access,55,US
+2025-03-16,Estate Sales,Involuntary Supply,65,US
+2025-03-16,Foreclosure Auctions,Distress Signal,68,US
+2025-03-16,Home Insurance,Financial Friction,41,US
+2025-03-16,Mortgage Assumption,Market Access,49,US
+2025-03-23,Estate Sales,Involuntary Supply,64,US
+2025-03-23,Foreclosure Auctions,Distress Signal,71,US
+2025-03-23,Home Insurance,Financial Friction,41,US
+2025-03-23,Mortgage Assumption,Market Access,53,US
+2025-03-30,Estate Sales,Involuntary Supply,71,US
+2025-03-30,Foreclosure Auctions,Distress Signal,66,US
+2025-03-30,Home Insurance,Financial Friction,40,US
+2025-03-30,Mortgage Assumption,Market Access,50,US
+2025-04-06,Estate Sales,Involuntary Supply,62,US
+2025-04-06,Foreclosure Auctions,Distress Signal,62,US
+2025-04-06,Home Insurance,Financial Friction,40,US
+2025-04-06,Mortgage Assumption,Market Access,52,US
+2025-04-13,Estate Sales,Involuntary Supply,67,US
+2025-04-13,Foreclosure Auctions,Distress Signal,68,US
+2025-04-13,Home Insurance,Financial Friction,41,US
+2025-04-13,Mortgage Assumption,Market Access,49,US
+2025-04-20,Estate Sales,Involuntary Supply,70,US
+2025-04-20,Foreclosure Auctions,Distress Signal,70,US
+2025-04-20,Home Insurance,Financial Friction,45,US
+2025-04-20,Mortgage Assumption,Market Access,59,US
+2025-04-27,Estate Sales,Involuntary Supply,66,US
+2025-04-27,Foreclosure Auctions,Distress Signal,76,US
+2025-04-27,Home Insurance,Financial Friction,47,US
+2025-04-27,Mortgage Assumption,Market Access,55,US
+2025-05-04,Estate Sales,Involuntary Supply,68,US
+2025-05-04,Foreclosure Auctions,Distress Signal,61,US
+2025-05-04,Home Insurance,Financial Friction,47,US
+2025-05-04,Mortgage Assumption,Market Access,54,US
+2025-05-11,Estate Sales,Involuntary Supply,65,US
+2025-05-11,Foreclosure Auctions,Distress Signal,59,US
+2025-05-11,Home Insurance,Financial Friction,39,US
+2025-05-11,Mortgage Assumption,Market Access,53,US
+2025-05-18,Estate Sales,Involuntary Supply,75,US
+2025-05-18,Foreclosure Auctions,Distress Signal,71,US
+2025-05-18,Home Insurance,Financial Friction,37,US
+2025-05-18,Mortgage Assumption,Market Access,54,US
+2025-05-25,Estate Sales,Involuntary Supply,71,US
+2025-05-25,Foreclosure Auctions,Distress Signal,71,US
+2025-05-25,Home Insurance,Financial Friction,44,US
+2025-05-25,Mortgage Assumption,Market Access,67,US
+2025-06-01,Estate Sales,Involuntary Supply,69,US
+2025-06-01,Foreclosure Auctions,Distress Signal,68,US
+2025-06-01,Home Insurance,Financial Friction,47,US
+2025-06-01,Mortgage Assumption,Market Access,55,US
+2025-06-08,Estate Sales,Involuntary Supply,71,US
+2025-06-08,Foreclosure Auctions,Distress Signal,64,US
+2025-06-08,Home Insurance,Financial Friction,48,US
+2025-06-08,Mortgage Assumption,Market Access,56,US
+2025-06-15,Estate Sales,Involuntary Supply,74,US
+2025-06-15,Foreclosure Auctions,Distress Signal,72,US
+2025-06-15,Home Insurance,Financial Friction,48,US
+2025-06-15,Mortgage Assumption,Market Access,56,US
+2025-06-22,Estate Sales,Involuntary Supply,58,US
+2025-06-22,Foreclosure Auctions,Distress Signal,72,US
+2025-06-22,Home Insurance,Financial Friction,48,US
+2025-06-22,Mortgage Assumption,Market Access,57,US
+2025-06-29,Estate Sales,Involuntary Supply,72,US
+2025-06-29,Foreclosure Auctions,Distress Signal,74,US
+2025-06-29,Home Insurance,Financial Friction,61,US
+2025-06-29,Mortgage Assumption,Market Access,64,US
+2025-07-06,Estate Sales,Involuntary Supply,74,US
+2025-07-06,Foreclosure Auctions,Distress Signal,81,US
+2025-07-06,Home Insurance,Financial Friction,100,US
+2025-07-06,Mortgage Assumption,Market Access,65,US
+2025-07-13,Estate Sales,Involuntary Supply,76,US
+2025-07-13,Foreclosure Auctions,Distress Signal,80,US
+2025-07-13,Home Insurance,Financial Friction,97,US
+2025-07-13,Mortgage Assumption,Market Access,73,US
+2025-07-20,Estate Sales,Involuntary Supply,72,US
+2025-07-20,Foreclosure Auctions,Distress Signal,80,US
+2025-07-20,Home Insurance,Financial Friction,86,US
+2025-07-20,Mortgage Assumption,Market Access,64,US
+2025-07-27,Estate Sales,Involuntary Supply,73,US
+2025-07-27,Foreclosure Auctions,Distress Signal,80,US
+2025-07-27,Home Insurance,Financial Friction,74,US
+2025-07-27,Mortgage Assumption,Market Access,56,US
+2025-08-03,Estate Sales,Involuntary Supply,73,US
+2025-08-03,Foreclosure Auctions,Distress Signal,68,US
+2025-08-03,Home Insurance,Financial Friction,67,US
+2025-08-03,Mortgage Assumption,Market Access,56,US
+2025-08-10,Estate Sales,Involuntary Supply,73,US
+2025-08-10,Foreclosure Auctions,Distress Signal,79,US
+2025-08-10,Home Insurance,Financial Friction,60,US
+2025-08-10,Mortgage Assumption,Market Access,52,US
+2025-08-17,Estate Sales,Involuntary Supply,66,US
+2025-08-17,Foreclosure Auctions,Distress Signal,67,US
+2025-08-17,Home Insurance,Financial Friction,56,US
+2025-08-17,Mortgage Assumption,Market Access,46,US
+2025-08-24,Estate Sales,Involuntary Supply,69,US
+2025-08-24,Foreclosure Auctions,Distress Signal,73,US
+2025-08-24,Home Insurance,Financial Friction,57,US
+2025-08-24,Mortgage Assumption,Market Access,45,US
+2025-08-31,Estate Sales,Involuntary Supply,62,US
+2025-08-31,Foreclosure Auctions,Distress Signal,62,US
+2025-08-31,Home Insurance,Financial Friction,54,US
+2025-08-31,Mortgage Assumption,Market Access,44,US
+2025-09-07,Estate Sales,Involuntary Supply,63,US
+2025-09-07,Foreclosure Auctions,Distress Signal,65,US
+2025-09-07,Home Insurance,Financial Friction,59,US
+2025-09-07,Mortgage Assumption,Market Access,48,US
+2025-09-14,Estate Sales,Involuntary Supply,62,US
+2025-09-14,Foreclosure Auctions,Distress Signal,61,US
+2025-09-14,Home Insurance,Financial Friction,65,US
+2025-09-14,Mortgage Assumption,Market Access,45,US
+2025-09-21,Estate Sales,Involuntary Supply,62,US
+2025-09-21,Foreclosure Auctions,Distress Signal,72,US
+2025-09-21,Home Insurance,Financial Friction,60,US
+2025-09-21,Mortgage Assumption,Market Access,40,US
+2025-09-28,Estate Sales,Involuntary Supply,61,US
+2025-09-28,Foreclosure Auctions,Distress Signal,74,US
+2025-09-28,Home Insurance,Financial Friction,57,US
+2025-09-28,Mortgage Assumption,Market Access,37,US
+2025-10-05,Estate Sales,Involuntary Supply,62,US
+2025-10-05,Foreclosure Auctions,Distress Signal,66,US
+2025-10-05,Home Insurance,Financial Friction,55,US
+2025-10-05,Mortgage Assumption,Market Access,40,US
+2025-10-12,Estate Sales,Involuntary Supply,62,US
+2025-10-12,Foreclosure Auctions,Distress Signal,68,US
+2025-10-12,Home Insurance,Financial Friction,54,US
+2025-10-12,Mortgage Assumption,Market Access,35,US
+2025-10-19,Estate Sales,Involuntary Supply,62,US
+2025-10-19,Foreclosure Auctions,Distress Signal,65,US
+2025-10-19,Home Insurance,Financial Friction,57,US
+2025-10-19,Mortgage Assumption,Market Access,40,US
+2025-10-26,Estate Sales,Involuntary Supply,63,US
+2025-10-26,Foreclosure Auctions,Distress Signal,73,US
+2025-10-26,Home Insurance,Financial Friction,63,US
+2025-10-26,Mortgage Assumption,Market Access,45,US
+2025-11-02,Estate Sales,Involuntary Supply,65,US
+2025-11-02,Foreclosure Auctions,Distress Signal,75,US
+2025-11-02,Home Insurance,Financial Friction,61,US
+2025-11-02,Mortgage Assumption,Market Access,57,US
+2025-11-09,Estate Sales,Involuntary Supply,62,US
+2025-11-09,Foreclosure Auctions,Distress Signal,78,US
+2025-11-09,Home Insurance,Financial Friction,62,US
+2025-11-09,Mortgage Assumption,Market Access,44,US
+2025-11-16,Estate Sales,Involuntary Supply,41,US
+2025-11-16,Foreclosure Auctions,Distress Signal,73,US
+2025-11-16,Home Insurance,Financial Friction,52,US
+2025-11-16,Mortgage Assumption,Market Access,35,US
+2025-11-23,Estate Sales,Involuntary Supply,51,US
+2025-11-23,Foreclosure Auctions,Distress Signal,74,US
+2025-11-23,Home Insurance,Financial Friction,65,US
+2025-11-23,Mortgage Assumption,Market Access,40,US
+2025-11-30,Estate Sales,Involuntary Supply,51,US
+2025-11-30,Foreclosure Auctions,Distress Signal,71,US
+2025-11-30,Home Insurance,Financial Friction,61,US
+2025-11-30,Mortgage Assumption,Market Access,37,US
+2025-12-07,Estate Sales,Involuntary Supply,40,US
+2025-12-07,Foreclosure Auctions,Distress Signal,63,US
+2025-12-07,Home Insurance,Financial Friction,58,US
+2025-12-07,Mortgage Assumption,Market Access,36,US
+2025-12-14,Estate Sales,Involuntary Supply,34,US
+2025-12-14,Foreclosure Auctions,Distress Signal,57,US
+2025-12-14,Home Insurance,Financial Friction,53,US
+2025-12-14,Mortgage Assumption,Market Access,36,US
+2025-12-21,Estate Sales,Involuntary Supply,51,US
+2025-12-21,Foreclosure Auctions,Distress Signal,71,US
+2025-12-21,Home Insurance,Financial Friction,61,US
+2025-12-21,Mortgage Assumption,Market Access,41,US
+2025-12-28,Estate Sales,Involuntary Supply,63,US
+2025-12-28,Foreclosure Auctions,Distress Signal,78,US
+2025-12-28,Home Insurance,Financial Friction,64,US
+2025-12-28,Mortgage Assumption,Market Access,45,US
+2026-01-04,Estate Sales,Involuntary Supply,79,US
+2026-01-04,Foreclosure Auctions,Distress Signal,74,US
+2026-01-04,Home Insurance,Financial Friction,61,US
+2026-01-04,Mortgage Assumption,Market Access,53,US
+2026-01-11,Estate Sales,Involuntary Supply,58,US
+2026-01-11,Foreclosure Auctions,Distress Signal,86,US
+2026-01-11,Home Insurance,Financial Friction,72,US
+2026-01-11,Mortgage Assumption,Market Access,79,US
+2026-01-18,Estate Sales,Involuntary Supply,50,US
+2026-01-18,Foreclosure Auctions,Distress Signal,84,US
+2026-01-18,Home Insurance,Financial Friction,64,US
+2026-01-18,Mortgage Assumption,Market Access,68,US
+2026-01-25,Estate Sales,Involuntary Supply,55,US
+2026-01-25,Foreclosure Auctions,Distress Signal,79,US
+2026-01-25,Home Insurance,Financial Friction,49,US
+2026-01-25,Mortgage Assumption,Market Access,56,US
+2026-02-01,Estate Sales,Involuntary Supply,55,US
+2026-02-01,Foreclosure Auctions,Distress Signal,84,US
+2026-02-01,Home Insurance,Financial Friction,49,US
+2026-02-01,Mortgage Assumption,Market Access,58,US
+2026-02-08,Estate Sales,Involuntary Supply,32,US
+2026-02-08,Foreclosure Auctions,Distress Signal,72,US
+2026-02-08,Home Insurance,Financial Friction,49,US
+2026-02-08,Mortgage Assumption,Market Access,54,US

@@ -1,16 +1,22 @@
 -- BigQuery Schema for Google Trends Data
--- Table: trends_metrics
--- Purpose: Store Google Trends interest scores for housing-related search terms
+-- Table: google_search_trends
+-- Purpose: Store Google Trends interest scores for housing-related search terms (weekly aggregation)
 
-CREATE TABLE IF NOT EXISTS `housing_dashboard.trends_metrics` (
-  -- Date
-  date DATE NOT NULL OPTIONS(description="Date of interest score measurement"),
+-- Drop old table if it exists
+DROP TABLE IF EXISTS `housing_dashboard.trends_metrics`;
+
+CREATE TABLE IF NOT EXISTS `housing_dashboard.google_search_trends` (
+  -- Week start date (Sunday)
+  week_start_date DATE NOT NULL OPTIONS(description="Start date of the week (Sunday)"),
   
   -- Search term
   search_term STRING NOT NULL OPTIONS(description="Housing-related search term"),
   
-  -- Interest score
-  interest_score INT64 NOT NULL OPTIONS(description="Google Trends interest score (0-100 scale)"),
+  -- Category
+  category STRING NOT NULL OPTIONS(description="Term category: Distress, Affordability, or Inventory"),
+  
+  -- Average interest score for the week
+  avg_interest_score INT64 NOT NULL OPTIONS(description="Weekly average Google Trends interest score (0-100 scale)"),
   
   -- Geographic region
   region STRING NOT NULL OPTIONS(description="Geographic region (e.g., US)"),
@@ -18,57 +24,61 @@ CREATE TABLE IF NOT EXISTS `housing_dashboard.trends_metrics` (
   -- Metadata
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP() OPTIONS(description="When record was inserted/updated")
 )
-PARTITION BY date
-CLUSTER BY search_term
+PARTITION BY week_start_date
+CLUSTER BY category, search_term
 OPTIONS(
-  description="Google Trends interest scores for housing-related search terms to track market sentiment and buyer behavior",
-  labels=[("source", "google_trends"), ("data_type", "search_interest")]
+  description="Google Trends weekly average interest scores for housing-related search terms to track market sentiment and buyer behavior",
+  labels=[("source", "google_trends"), ("data_type", "search_interest"), ("granularity", "weekly")]
 );
 
 -- Create a view for recent trends (last 90 days)
-CREATE OR REPLACE VIEW `housing_dashboard.trends_recent` AS
+CREATE OR REPLACE VIEW `housing_dashboard.google_search_trends_recent` AS
 SELECT 
-  date,
+  week_start_date,
   search_term,
-  interest_score,
+  category,
+  avg_interest_score,
   region
-FROM `housing_dashboard.trends_metrics`
-WHERE date >= DATE_SUB(CURRENT_DATE(), INTERVAL 90 DAY)
-ORDER BY date DESC, search_term;
+FROM `housing_dashboard.google_search_trends`
+WHERE week_start_date >= DATE_SUB(CURRENT_DATE(), INTERVAL 90 DAY)
+ORDER BY week_start_date DESC, category, search_term;
 
 -- Create a view for normalized comparison (all terms on same scale)
-CREATE OR REPLACE VIEW `housing_dashboard.trends_normalized` AS
+CREATE OR REPLACE VIEW `housing_dashboard.google_search_trends_normalized` AS
 WITH term_stats AS (
   SELECT 
     search_term,
-    MAX(interest_score) as max_score,
-    MIN(interest_score) as min_score
-  FROM `housing_dashboard.trends_metrics`
+    MAX(avg_interest_score) as max_score,
+    MIN(avg_interest_score) as min_score
+  FROM `housing_dashboard.google_search_trends`
   GROUP BY search_term
 )
 SELECT 
-  t.date,
+  t.week_start_date,
   t.search_term,
-  t.interest_score,
+  t.category,
+  t.avg_interest_score,
   -- Normalize to 0-1 scale within each term's historical range
   CASE 
     WHEN s.max_score = s.min_score THEN 0.5
-    ELSE (t.interest_score - s.min_score) / (s.max_score - s.min_score)
+    ELSE (t.avg_interest_score - s.min_score) / (s.max_score - s.min_score)
   END as normalized_score,
   t.region
-FROM `housing_dashboard.trends_metrics` t
+FROM `housing_dashboard.google_search_trends` t
 JOIN term_stats s ON t.search_term = s.search_term
-ORDER BY t.date DESC, t.search_term;
+ORDER BY t.week_start_date DESC, t.category, t.search_term;
 
--- Create a view for weekly aggregates (smoother trends)
-CREATE OR REPLACE VIEW `housing_dashboard.trends_weekly` AS
+-- Create a view grouped by category
+CREATE OR REPLACE VIEW `housing_dashboard.google_search_trends_by_category` AS
 SELECT 
-  DATE_TRUNC(date, WEEK) as week_start,
-  search_term,
-  AVG(interest_score) as avg_interest_score,
-  MIN(interest_score) as min_interest_score,
-  MAX(interest_score) as max_interest_score,
+  week_start_date,
+  category,
+  AVG(avg_interest_score) as category_avg_score,
+  MIN(avg_interest_score) as category_min_score,
+  MAX(avg_interest_score) as category_max_score,
+  COUNT(DISTINCT search_term) as num_terms,
   region
-FROM `housing_dashboard.trends_metrics`
-GROUP BY week_start, search_term, region
-ORDER BY week_start DESC, search_term;
+FROM `housing_dashboard.google_search_trends`
+GROUP BY week_start_date, category, region
+ORDER BY week_start_date DESC, category;
+
