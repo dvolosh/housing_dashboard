@@ -3,8 +3,8 @@
 
 $ErrorActionPreference = "Stop"
 
-# Configuration
-$PROJECT_ID = if ($env:GCP_PROJECT_ID) { $env:GCP_PROJECT_ID } else { "vant-486316" }
+# Configuration - Set these environment variables before running
+$PROJECT_ID = $env:GCP_PROJECT_ID
 $SERVICE_NAME = "housing-dashboard"
 $REGION = "us-central1"
 $IMAGE_NAME = "gcr.io/$PROJECT_ID/$SERVICE_NAME"
@@ -14,6 +14,19 @@ Write-Host "Project: $PROJECT_ID"
 Write-Host "Service: $SERVICE_NAME"
 Write-Host "Region: $REGION"
 Write-Host ""
+
+# Validate required environment variables
+if (-not $env:GCP_PROJECT_ID) {
+    Write-Host "ERROR: GCP_PROJECT_ID environment variable is not set" -ForegroundColor Red
+    Write-Host "Set it with: `$env:GCP_PROJECT_ID='your-project-id'"
+    exit 1
+}
+
+if (-not $env:GCP_DATASET_ID) {
+    Write-Host "ERROR: GCP_DATASET_ID environment variable is not set" -ForegroundColor Red
+    Write-Host "Set it with: `$env:GCP_DATASET_ID='your-dataset-id'"
+    exit 1
+}
 
 # Check if gcloud is installed
 if (-not (Get-Command gcloud -ErrorAction SilentlyContinue)) {
@@ -45,7 +58,7 @@ gcloud run deploy $SERVICE_NAME `
   --cpu 1 `
   --timeout 300 `
   --max-instances 10 `
-  --set-env-vars "GCP_PROJECT_ID=$PROJECT_ID,GCP_DATASET_ID=db"
+  --set-env-vars "GCP_PROJECT_ID=$PROJECT_ID,GCP_DATASET_ID=$env:GCP_DATASET_ID"
 
 # Get the service URL
 $SERVICE_URL = gcloud run services describe $SERVICE_NAME --region $REGION --format='value(status.url)'

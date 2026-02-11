@@ -5,8 +5,8 @@
 
 set -e  # Exit on error
 
-# Configuration
-PROJECT_ID="${GCP_PROJECT_ID:-vant-486316}"
+# Configuration - Set these environment variables before running
+PROJECT_ID="${GCP_PROJECT_ID}"
 SERVICE_NAME="housing-dashboard"
 REGION="us-central1"
 IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"
@@ -16,6 +16,19 @@ echo "Project: $PROJECT_ID"
 echo "Service: $SERVICE_NAME"
 echo "Region: $REGION"
 echo ""
+
+# Validate required environment variables
+if [ -z "$GCP_PROJECT_ID" ]; then
+    echo "❌ Error: GCP_PROJECT_ID environment variable is not set"
+    echo "Set it with: export GCP_PROJECT_ID=your-project-id"
+    exit 1
+fi
+
+if [ -z "$GCP_DATASET_ID" ]; then
+    echo "❌ Error: GCP_DATASET_ID environment variable is not set"
+    echo "Set it with: export GCP_DATASET_ID=your-dataset-id"
+    exit 1
+fi
 
 # Check if gcloud is installed
 if ! command -v gcloud &> /dev/null; then
@@ -54,7 +67,7 @@ gcloud run deploy $SERVICE_NAME \
   --cpu 1 \
   --timeout 300 \
   --max-instances 10 \
-  --set-env-vars "GCP_PROJECT_ID=$PROJECT_ID,GCP_DATASET_ID=db"
+  --set-env-vars "GCP_PROJECT_ID=$PROJECT_ID,GCP_DATASET_ID=$GCP_DATASET_ID"
 
 # Get the service URL
 SERVICE_URL=$(gcloud run services describe $SERVICE_NAME --region $REGION --format='value(status.url)')
