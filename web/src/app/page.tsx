@@ -22,8 +22,14 @@ export default function Home() {
               Access the full interactive dashboard to explore the connection between social sentiment and market reality.
             </p>
 
-            <a href="http://localhost:8501" target="_blank" className="btn btn-outline" style={{ padding: '1rem 3rem', fontSize: '1.1rem' }}>
-              Launch Dashboard App
+            <a
+              href={process.env.NEXT_PUBLIC_DASHBOARD_URL || 'https://housing-dashboard-wo7crn5xwa-uc.a.run.app'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+              style={{ padding: '1rem 3rem', fontSize: '1.1rem' }}
+            >
+              Launch Dashboard →
             </a>
           </div>
 

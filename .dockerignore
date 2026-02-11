@@ -1,0 +1,59 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.venv
+venv/
+ENV/
+
+# Environment files
+.env
+*.env
+.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific - exclude web and data_engine from dashboard deployment
+web/
+data_engine/
+
+# Exclude data files EXCEPT uscities.csv (needed for dashboard)
+*.xlsx
+*.xls
+data/
+raw_data/
+*.log
+
+# Documentation
+README.md
+*.md
+!requirements.txt
+
+# Tests
+tests/
+test_*.py
+*_test.py
+
+# Deployment scripts (not needed in container)
+deploy.sh
+deploy.ps1

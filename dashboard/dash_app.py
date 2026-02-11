@@ -203,6 +203,33 @@ app.index_string = '''
             #map-metric svg {
                 fill: #333333 !important;
             }
+            
+            /* Tab styling */
+            .tab--selected {
+                background-color: var(--bg-card) !important;
+                border-bottom: 3px solid var(--primary-accent) !important;
+                color: var(--text-primary) !important;
+            }
+            
+            .tab {
+                background-color: var(--bg-dark) !important;
+                border: none !important;
+                color: rgba(237, 237, 237, 0.6) !important;
+                padding: 1rem 2rem !important;
+                font-weight: 500 !important;
+                transition: all 0.3s ease !important;
+            }
+            
+            .tab:hover {
+                background-color: rgba(26, 26, 26, 0.5) !important;
+                color: var(--text-primary) !important;
+            }
+            
+            .tabs {
+                background-color: var(--bg-dark) !important;
+                border-bottom: 1px solid #333 !important;
+                margin-bottom: 2rem !important;
+            }
         </style>
     </head>
     <body>
@@ -363,8 +390,8 @@ def get_city_data_with_coords():
             print("WARNING: No city data returned from BigQuery!")
             return pd.DataFrame()
         
-        # Load coordinates from CSV
-        cities_csv_path = Path(__file__).parent.parent / 'data_engine' / 'uscities.csv'
+        # Load coordinates from CSV (now in dashboard folder for self-contained deployment)
+        cities_csv_path = Path(__file__).parent / 'uscities.csv'
         if not cities_csv_path.exists():
             print(f"ERROR: Cities CSV file not found at {cities_csv_path}")
             return pd.DataFrame()
@@ -438,6 +465,36 @@ def get_city_data_with_coords():
         return pd.DataFrame()
 
 
+def fetch_trends_data():
+    """Fetch Google Trends market signals data"""
+    client = get_bigquery_client()
+    if not client:
+        return pd.DataFrame()
+    
+    dataset_id = os.getenv('GCP_DATASET_ID', 'db')
+    
+    query = f"""
+    SELECT 
+        week_start_date,
+        search_term,
+        category,
+        avg_interest_score,
+        region
+    FROM `{client.project}.{dataset_id}.google_search_trends`
+    ORDER BY search_term, week_start_date
+    """
+    
+    try:
+        df = client.query(query).to_dataframe()
+        # Ensure week_start_date is parsed as datetime
+        if not df.empty and 'week_start_date' in df.columns:
+            df['week_start_date'] = pd.to_datetime(df['week_start_date'])
+        return df
+    except Exception as e:
+        print(f"Error fetching Google Trends data: {e}")
+        return pd.DataFrame()
+
+
 # Layout
 app.layout = html.Div(children=[
     # Location component for page load detection
@@ -449,6 +506,7 @@ app.layout = html.Div(children=[
         dcc.Store(id='zillow-data-store'),
         dcc.Store(id='city-data-store'),
         dcc.Store(id='data-date-store'),  # Store for data release date
+        dcc.Store(id='trends-data-store'),  # Store for Google Trends data
     ]),
 
     # Main visible content
@@ -460,6 +518,12 @@ app.layout = html.Div(children=[
         html.P('Housing Market Intelligence Platform'),
         html.P(id='data-date-display', style={'fontSize': '0.9rem', 'color': 'rgba(237, 237, 237, 0.6)', 'marginTop': '0.5rem'})
     ]),
+    
+    # Tabs
+    dcc.Tabs(id='main-tabs', value='fundamentals', children=[
+        
+        # Tab 1: Fundamentals
+        dcc.Tab(label='Fundamentals', value='fundamentals', children=[
     
     # Filters
     html.Div(className='filter-section', children=[
@@ -575,6 +639,59 @@ app.layout = html.Div(children=[
         ], md=6)
     ]),
 
+    ]),  # End Fundamentals Tab
+    
+    # Tab 2: Market Signals (Google Trends)
+    dcc.Tab(label='Market Signals', value='market-signals', children=[
+        
+        # Section title
+        html.Div(className='section-title', children='Forward-Looking Market Indicators', style={'marginTop': '2rem'}),
+        
+        # Metric cards with descriptions
+        dbc.Row([
+            dbc.Col([
+                html.Div(className='metric-card', style={'borderLeftColor': '#8B4789'}, children=[
+                    html.H4('Estate Sales', style={'color': '#8B4789', 'marginBottom': '0.5rem'}),
+                    html.P('Homes from inheritance/estates', style={'fontSize': '0.9rem', 'color': 'rgba(237, 237, 237, 0.7)', 'margin': '0'})
+                ])
+            ], md=3),
+            dbc.Col([
+                html.Div(className='metric-card', style={'borderLeftColor': '#E74C3C'}, children=[
+                    html.H4('Foreclosure Auctions', style={'color': '#E74C3C', 'marginBottom': '0.5rem'}),
+                    html.P('Forced selling/market distress', style={'fontSize': '0.9rem', 'color': 'rgba(237, 237, 237, 0.7)', 'margin': '0'})
+                ])
+            ], md=3),
+            dbc.Col([
+                html.Div(className='metric-card', style={'borderLeftColor': '#F39C12'}, children=[
+                    html.H4('Home Insurance', style={'color': '#F39C12', 'marginBottom': '0.5rem'}),
+                    html.P('Rising homeowner carry costs', style={'fontSize': '0.9rem', 'color': 'rgba(237, 237, 237, 0.7)', 'margin': '0'})
+                ])
+            ], md=3),
+            dbc.Col([
+                html.Div(className='metric-card', style={'borderLeftColor': '#3498DB'}, children=[
+                    html.H4('Mortgage Assumption', style={'color': '#3498DB', 'marginBottom': '0.5rem'}),
+                    html.P('Buyers seeking rate relief', style={'fontSize': '0.9rem', 'color': 'rgba(237, 237, 237, 0.7)', 'margin': '0'})
+                ])
+            ], md=3)
+        ], style={'marginBottom': '2rem'}),
+        
+        # Google Trends Time Series Chart
+        html.Div(className='chart-container', children=[
+            dcc.Loading(
+                id='loading-trends',
+                type='default',
+                children=dcc.Graph(id='trends-chart', config={'displayModeBar': True})
+            )
+        ]),
+        
+        # Data note
+        html.P('Data Source: Google Trends | Weekly search interest scores (0-100) | Updated Weekly', 
+               style={'textAlign': 'center', 'color': 'rgba(237, 237, 237, 0.5)', 'fontSize': '0.85rem', 'marginTop': '1rem'})
+        
+    ])  # End Market Signals Tab
+    
+    ]),  # End Tabs
+
     ]),  # End of main-container
 ])
 
@@ -610,13 +727,15 @@ def update_city_options(_):
     [Output('fred-data-store', 'data'),
      Output('zillow-data-store', 'data'),
      Output('city-data-store', 'data'),
-     Output('data-date-store', 'data')],
+     Output('data-date-store', 'data'),
+     Output('trends-data-store', 'data')],
     Input('url', 'pathname')  # Changed from city-search to url - fetch once on page load
 )
 def fetch_data_on_load(pathname):
     """Fetch all data once on page load - city filtering happens client-side"""
     fred_df = fetch_fred_data()
     zillow_df = fetch_zillow_data(None)
+    trends_df = fetch_trends_data()
     
     # Get both state aggregated data and city data with coordinates (top 5 per state)
     state_df = get_state_aggregated_data()
@@ -637,7 +756,8 @@ def fetch_data_on_load(pathname):
         fred_df.to_json(date_format='iso', orient='split') if not fred_df.empty else None,
         zillow_df.to_json(date_format='iso', orient='split') if not zillow_df.empty else None,
         combined_data,
-        data_date
+        data_date,
+        trends_df.to_json(date_format='iso', orient='split') if not trends_df.empty else None
     )
 
 @app.callback(
@@ -949,6 +1069,102 @@ def update_cpi_chart(fred_data_json):
     return fig
 
 @app.callback(
+    Output('trends-chart', 'figure'),
+    Input('trends-data-store', 'data')
+)
+def update_trends_chart(trends_data_json):
+    """Update Google Trends multi-line time series chart"""
+    if not trends_data_json:
+        return go.Figure().update_layout(
+            title='No Google Trends data available',
+            template='plotly_dark',
+            plot_bgcolor='#000000',
+            paper_bgcolor='#1a1a1a',
+            font=dict(color='#ededed')
+        )
+    
+    trends_df = pd.read_json(trends_data_json, orient='split')
+    
+    if trends_df.empty:
+        return go.Figure().update_layout(
+            title='No data available',
+            template='plotly_dark',
+            plot_bgcolor='#000000',
+            paper_bgcolor='#1a1a1a',
+            font=dict(color='#ededed')
+        )
+    
+    # Define colors for each metric
+    metric_colors = {
+        'Estate Sales': '#8B4789',  # Purple
+        'Foreclosure Auctions': '#E74C3C',  # Red
+        'Home Insurance': '#F39C12',  # Orange
+        'Mortgage Assumption': '#3498DB'  # Blue
+    }
+    
+    fig = go.Figure()
+    
+    # Add a line for each metric
+    for search_term in trends_df['search_term'].unique():
+        term_data = trends_df[trends_df['search_term'] == search_term].copy()
+        
+        # Get category for description
+        category = term_data['category'].iloc[0] if not term_data.empty else ''
+        
+        fig.add_trace(go.Scatter(
+            x=term_data['week_start_date'],
+            y=term_data['avg_interest_score'],
+            mode='lines',
+            name=search_term,
+            line=dict(color=metric_colors.get(search_term, '#A7D129'), width=2.5),
+            hovertemplate=f'<b>{search_term}</b><br>' +
+                          f'{category}<br>' +
+                          'Week: %{x|%b %d, %Y}<br>' +
+                          'Interest Score: %{y}<extra></extra>'
+        ))
+    
+    fig.update_layout(
+        title='Google Trends Market Signals (5-Year Trend)',
+        xaxis_title='Date',
+        yaxis_title='Search Interest Score (0-100)',
+        template='plotly_dark',
+        hovermode='x unified',
+        plot_bgcolor='#000000',
+        paper_bgcolor='#1a1a1a',
+        font=dict(color='#ededed'),
+        xaxis=dict(
+            gridcolor='#333',
+            rangeslider=dict(visible=True, bgcolor='#1a1a1a'),
+            rangeselector=dict(
+                buttons=list([
+                    dict(count=3, label="3m", step="month", stepmode="backward"),
+                    dict(count=6, label="6m", step="month", stepmode="backward"),
+                    dict(count=1, label="1y", step="year", stepmode="backward"),
+                    dict(count=2, label="2y", step="year", stepmode="backward"),
+                    dict(step="all", label="All")
+                ]),
+                bgcolor='#1a1a1a',
+                activecolor='#A7D129',
+                font=dict(color='#ededed')
+            )
+        ),
+        yaxis=dict(gridcolor='#333', range=[0, 105]),
+        legend=dict(
+            orientation='h',
+            yanchor='bottom',
+            y=1.02,
+            xanchor='right',
+            x=1,
+            bgcolor='rgba(0,0,0,0.5)',
+            bordercolor='#444',
+            borderwidth=1
+        ),
+        height=600
+    )
+    
+    return fig
+
+@app.callback(
     Output('timeseries-city-search', 'options'),
     Input('timeseries-city-search', 'id')
 )
@@ -1104,6 +1320,11 @@ def update_city_timeseries(selected_city, selected_metric):
         )
         return fig
 
+# Expose the Flask server for gunicorn (required for Cloud Run)
+server = app.server
+
 # Run the app
 if __name__ == '__main__':
+    # This runs when you execute the script locally
+    # For production (Cloud Run), gunicorn will use the 'server' variable above
     app.run(debug=True, host='127.0.0.1', port=8050)
